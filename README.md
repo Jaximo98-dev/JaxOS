@@ -8,3 +8,6 @@
     update = "sudo nixos-rebuild switch";
     rof = "rofi -show drun";
   };
+
+
+  xrandr --output DP-3 --mode 2560x1440 --rate 144

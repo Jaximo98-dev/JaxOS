@@ -17,6 +17,9 @@
     extraGroups = [ "networkmanager" "wheel" "audio" ];
   };
 
+  programs.zsh.enable = true;
+  users.defaultUserShell = pkgs.zsh;
+
   # Las siguientes opciones solo las puede ejecutar ROOT, por eso no estan en modulos.
 
   # Enable flakes

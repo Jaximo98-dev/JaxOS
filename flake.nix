@@ -39,7 +39,7 @@
                     ./home/default-home.nix
                     ]; 
                 };
-                home-manager.extraSpecialArgs = { inherit username ; };
+                #home-manager.extraSpecialArgs = { inherit username ; };
              }
           ];
 				};
