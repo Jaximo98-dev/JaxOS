@@ -17,22 +17,6 @@
     extraGroups = [ "networkmanager" "wheel" "audio" ];
   };
 
-  users.defaultUserShell = pkgs.zsh;
-
-  # Por si se abre el TTY, se queda igual
-  programs.bash = {
-
-    shellAliases = {
-      la = "ls -a";
-      ls = "ls -l";
-      update = "sudo nixos-rebuild switch";
-      rof = "rofi -show drun";
-    };
-
-    initExtra = "alacritty";
-
-  };
-
   # Las siguientes opciones solo las puede ejecutar ROOT, por eso no estan en modulos.
 
   # Enable flakes
@@ -40,10 +24,6 @@
 
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
-
-  # Enable zsh.
-  programs.zsh.enable = true;
-
   system.stateVersion = "24.05";
 
 }
