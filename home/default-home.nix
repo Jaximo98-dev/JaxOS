@@ -28,9 +28,8 @@
       #chrome # TODO: Buscar fork limpio, como mercury
       discord # TODO: Buscar como poner betterdiscord
       
-
     ];
-    
+
     stateVersion = "24.05";
   };
 }
