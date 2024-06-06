@@ -22,6 +22,7 @@ in {
       git
       rofi # Alternativa a dmenu
       alacritty # Terminal emulator
+      tmux
       
       # Editors
       vscodium

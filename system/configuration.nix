@@ -15,9 +15,23 @@
     isNormalUser = true;
     description = "User ${username}";
     extraGroups = [ "networkmanager" "wheel" "audio" ];
-    shell = pkgs.zsh;
   };
 
+  users.defaultUserShell = pkgs.zsh;
+
+  # Por si se abre el TTY, se queda igual
+  programs.bash = {
+
+    shellAliases = {
+      la = "ls -a";
+      ls = "ls -l";
+      update = "sudo nixos-rebuild switch";
+      rof = "rofi -show drun";
+    };
+
+    initExtra = "alacritty";
+
+  };
 
   # Las siguientes opciones solo las puede ejecutar ROOT, por eso no estan en modulos.
 
