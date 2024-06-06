@@ -1,6 +1,6 @@
 .PHONY: update
 update:
-	home-manager switch --flake .#JaxOS
+	sudo nixos-rebuild switch --flake .#JaxOS
 
 .PHONY: clean
 clean:
