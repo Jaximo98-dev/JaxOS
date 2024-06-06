@@ -1,24 +1,17 @@
-{lib, pkgs, username, ... }: let
-  homeDirectory = "/home/${username}";
-  configHome = "${homeDirectory}/.config";
-in { 
+{lib, pkgs, username, ... }:{
 
   imports = [
     ./modules/zsh.nix # Shell interpreter
+    ./modules/tmux.nix
   ];
 
   home = {
-
-
-
-    inherit username;
-    inherit homeDirectory;
-
     packages = with pkgs; [
       # Fundamentales/Cimientos
       home-manager
 
       cowsay # Para probar cosas
+      tldr
       git
       rofi # Alternativa a dmenu
       alacritty # Terminal emulator

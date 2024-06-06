@@ -15,6 +15,7 @@
     isNormalUser = true;
     description = "User ${username}";
     extraGroups = [ "networkmanager" "wheel" "audio" ];
+    shell = pkgs.zsh;
   };
 
   # Las siguientes opciones solo las puede ejecutar ROOT, por eso no estan en modulos.
