@@ -3,7 +3,12 @@
   imports = 
   [
     ./modules/zsh.nix # Shell interpreter
+    ./modules/alacritty.nix # Terminal emulator
     ./modules/tmux.nix # Session manager
+    
+    ./modules/neovim.nix # Code editor
+    ./modules/polybar.nix # Bar
+
   ];
 
   home = {
@@ -20,11 +25,9 @@
       tldr
 
       rofi # Alternativa a dmenu
-      alacritty # Terminal emulator
       
       # Editors
       vscodium
-      neovim
 
       # Apps
       firefox # TODO: Cambiar por otro fork
