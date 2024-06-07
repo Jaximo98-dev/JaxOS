@@ -23,6 +23,7 @@
       gh
       gnumake
       thefuck
+      i3lock
 
       cowsay # Para probar cosas
       tldr
