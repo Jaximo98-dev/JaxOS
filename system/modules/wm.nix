@@ -23,4 +23,5 @@
   # Default session
   services.displayManager.defaultSession = "none+i3";
 */
+  };
 }

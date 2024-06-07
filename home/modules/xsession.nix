@@ -1,25 +1,22 @@
 { config, pkgs, ...}:
 
 {
-  home = {
-
-    xsession = {
+  xsession = {
+    enable = true;
+    windowManager.i3 = {
       enable = true;
-      windowManager.i3 = {
-        enable = true;
-        config = {
+      config = {
 
-          terminal = "alacritty";
-          window.titlebar = false;
+        terminal = "alacritty";
+        window.titlebar = false;
 
-          startup = [
-            {command = "firefox";}
-          ];
-          
-        };
+        startup = [
+          {command = "firefox";}
+        ];
+
       };
-
     };
 
   };
+
 }
