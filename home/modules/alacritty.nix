@@ -3,6 +3,8 @@
 {
   programs.alacritty = {
     enable = true;
-    background_opacity = 0.6;
+    settings = {
+      background_opacity = 0.6;
+    };
   };
 }
