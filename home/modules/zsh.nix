@@ -2,7 +2,7 @@
 
 {
   programs.zsh = {
-    # enable = true;
+    enable = true;
 
     # Zsh settings
     enableCompletion = true;
@@ -12,7 +12,7 @@
     shellAliases = {
       ll = "ls -l";
       update = "sudo nixos-rebuild switch";
-      rof = "rofi -show drun";
+      rof = "rofi -show drun; exit";
     };
 
     # Oh my zsh!

@@ -1,4 +1,4 @@
-{lib, pkgs, ... }:{
+{lib, pkgs, username, ... }:{
 
   imports = 
   [
@@ -7,11 +7,14 @@
   ];
 
   home = {
+    username = username;
+
     packages = with pkgs; [
       # Fundamentales/Cimientos
       home-manager
       git
       gnumake
+      thefuck
 
       cowsay # Para probar cosas
       tldr

@@ -14,6 +14,7 @@
 
     windowManager.i3 = {
       enable = true;
+      config.terminal = "alacritty -e zsh";
       extraPackages = with pkgs; [ i3lock i3status];
     };
   };
