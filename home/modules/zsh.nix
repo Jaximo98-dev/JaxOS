@@ -1,8 +1,6 @@
 { config, pkgs, ...}:
 
 {
-  programs.alacritty.enable = true;
-
   programs.zsh = {
     enable = true;
 

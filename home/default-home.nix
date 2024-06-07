@@ -2,6 +2,8 @@
 
   imports = 
   [
+    ./modules/xsession.nix # Initial xsession
+
     ./modules/zsh.nix # Shell interpreter
     ./modules/alacritty.nix # Terminal emulator
     ./modules/tmux.nix # Session manager

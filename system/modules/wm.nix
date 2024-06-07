@@ -8,6 +8,7 @@
   services.xserver = {
     enable = true;
 
+/*
     desktopManager = {
       xterm.enable = false;
     };
@@ -18,6 +19,8 @@
     };
   };
 
+
   # Default session
   services.displayManager.defaultSession = "none+i3";
+*/
 }
