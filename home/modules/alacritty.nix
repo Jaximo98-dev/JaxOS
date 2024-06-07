@@ -4,7 +4,7 @@
   programs.alacritty = {
     enable = true;
     settings = {
-      window.background_opacity = 0.6;
+      window.opacity = 1.0;
     };
   };
 }
