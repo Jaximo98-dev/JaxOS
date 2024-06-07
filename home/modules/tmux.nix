@@ -5,8 +5,8 @@
     enable = true;
 
     shell = "\${pkgs.zsh}/bin/zsh";
-    keyMode = "vi";
-    clock24 = true;
-    historyLimit = 5000;
+    #keyMode = "vi";
+    #clock24 = true;
+    #historyLimit = 5000;
   };
 }

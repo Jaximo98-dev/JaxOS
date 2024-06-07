@@ -8,7 +8,7 @@
   services.xserver = {
     enable = true;
 
-/*
+/* MOVED TO HOME MANAGER XSESSION
     desktopManager = {
       xterm.enable = false;
     };
