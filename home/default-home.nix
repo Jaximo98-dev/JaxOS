@@ -5,7 +5,7 @@
     ./modules/zsh.nix # Shell interpreter
     ./modules/alacritty.nix # Terminal emulator
     ./modules/tmux.nix # Session manager
-    
+
     ./modules/neovim.nix # Code editor
     ./modules/polybar.nix # Bar
 
@@ -18,6 +18,7 @@
       # Fundamentales/Cimientos
       home-manager
       git
+      gh
       gnumake
       thefuck
 
