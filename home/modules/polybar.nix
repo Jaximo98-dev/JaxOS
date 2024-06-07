@@ -1,7 +1,7 @@
 { config, pkgs, ...}:
 
 {
-  programs.polybar = {
+  services.polybar = {
     enable = true;
   };
 }
