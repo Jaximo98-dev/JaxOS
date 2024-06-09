@@ -14,6 +14,8 @@
       ll = "ls -l";
       update = "sudo nixos-rebuild switch";
       rof = "rofi -show drun; exit";
+      cdj = "cd ~/JaxOS";
+      cdjm = "cd ~/JaxOS; make";
     };
 
     # Oh my zsh!
