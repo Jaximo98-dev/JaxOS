@@ -31,6 +31,8 @@ in
           "${modifier}+Return" = "exec alacritty";
           "${modifier}+Shift+q" = "kill";
           "${modifier}+d" = "exec ${pkgs.rofi}/bin/rofi -show drun";
+          "button7" = "workspace prev"; # Rueda raton izq
+          "button6" = "workspace next"; # Rueda raton der
         };
 
       };
