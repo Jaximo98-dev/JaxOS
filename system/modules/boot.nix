@@ -14,7 +14,8 @@
 		fontSize = 42;
 		configurationLimit = 20;
 		extraEntriesBeforeNixOS = true;
-		default=-1;
+		default = 22;
+		timeout = 10;
 		/* theme = pkgs.stdenv.mkDerivation {
 				pname = "grub_bios_theme";
 				version = "1";
