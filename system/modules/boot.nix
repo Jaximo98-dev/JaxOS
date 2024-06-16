@@ -14,7 +14,8 @@
 		fontSize = 42;
 		configurationLimit = 20;
 		extraEntriesBeforeNixOS = true;
-		theme = pkgs.stdenv.mkDerivation {
+		default=-1;
+		/* theme = pkgs.stdenv.mkDerivation {
 				pname = "grub_bios_theme";
 				version = "1";
 				src = pkgs.fetchFromGitHub {
@@ -27,6 +28,6 @@
             mkdir -p $out/share/grub/themes/CRT-Amber
             cp -r * $out/share/grub/themes/CRT-Amber
         '';
-			};
+			}; */
 	};
 }
