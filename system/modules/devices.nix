@@ -12,7 +12,6 @@
   # Configure and enable Networking
   networking.networkmanager.enable = true;
   networking.hostName = "Jaximo_dev";
-  networking.networkmanager.enable = if (device == "laptop") then true else false;
 
   # pkgs.brightnessctl is in charge of keyboard backlight for laptop, check in home.
 }
