@@ -3,7 +3,6 @@
 {
   imports =
     [ 
-      ./hardware-configuration.nix # Include the results of the hardware scan.
       ./modules/wm.nix
       ./modules/localization.nix
       ./modules/devices.nix

@@ -1,6 +1,6 @@
 {
 
-	description = "NixOS + home-manager flake. All in one single place.";
+	description = "This is JaxOS.";
 
 	inputs = {
 
@@ -22,7 +22,7 @@
 			pkgs = import nixpkgs { inherit system; };
 		in {
       nixosConfigurations = {
-				JaxOS = lib.nixosSystem {
+				desktop = lib.nixosSystem {
 
 					inherit system;
           specialArgs = { inherit username ; };
@@ -30,6 +30,30 @@
 
 					modules = [
             ./system/configuration.nix
+						./system/hardware/desktop.nix
+            home-manager.nixosModules.home-manager
+             {
+                home-manager.useGlobalPkgs = true;
+                home-manager.useUserPackages = true;
+                home-manager.users.${username} = {
+                  imports = [
+                    ./home/default-home.nix
+                    ]; 
+                };
+                home-manager.extraSpecialArgs = { inherit username ; };
+             }
+          ];
+				};
+
+				laptop = lib.nixosSystem {
+
+					inherit system;
+          specialArgs = { inherit username ; };
+
+
+					modules = [
+            ./system/configuration.nix
+						./system/hardware/laptop.nix
             home-manager.nixosModules.home-manager
              {
                 home-manager.useGlobalPkgs = true;
