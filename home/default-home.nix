@@ -24,7 +24,7 @@
       thefuck
       cowsay      # Para probar cosas
       tldr
-         # Keyboad backlight for laptop
+      brightnessctl   # Keyboad backlight for laptop
       rofi        # Alternativa a dmenu
       
       # Editors
@@ -36,7 +36,6 @@
       #chrome     # TODO: Buscar fork limpio, como mercury
       discord     # TODO: Buscar como poner betterdiscord
       
-      (if (device == "laptop") then brightnessctl else null)
     ];
 
     stateVersion = "24.05";
