@@ -23,6 +23,7 @@
 			pkgs = import nixpkgs { inherit system; };
 		in {
       nixosConfigurations = {
+
 				desktop = lib.nixosSystem {
 					inherit system;
           specialArgs = { inherit username ; device = "desktop"; };
@@ -64,6 +65,7 @@
              }
           ];
 				};
+        
 			};
 	};
 

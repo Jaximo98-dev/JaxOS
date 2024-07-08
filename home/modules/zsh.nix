@@ -4,7 +4,7 @@
   programs.zsh = {
     enable = true;
 
-    # Zsh settings
+    # zsh settings
     enableCompletion = true;
     autosuggestion.enable = true;
     syntaxHighlighting.enable = true;
@@ -15,7 +15,8 @@
       update = "sudo nixos-rebuild switch";
       rof = "rofi -show drun; exit";
       cdj = "cd ~/JaxOS";
-      cdjm = "cd ~/JaxOS; make";
+      cdjmd = "cd ~/JaxOS; make desktop";
+      cdjml = "cd ~/JaxOS; make laptop";
     };
 
     # Oh my zsh!
@@ -25,4 +26,6 @@
       theme = "robbyrussell";
     };
   };
+
+  users.defaultUserShell = pkgs.zsh;
 }

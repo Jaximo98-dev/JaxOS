@@ -1,4 +1,6 @@
-# Localization, el teclado, huso horario, etc...
+#
+# Localization of keyboard and timezone
+#
 { config, pkgs, ... }:
 {
   # Configure console keymap

@@ -16,15 +16,12 @@
     extraGroups = [ "networkmanager" "wheel" "audio" ];
   };
 
-  programs.zsh.enable = true;
-  users.defaultUserShell = pkgs.zsh;
+  # Set zsh as main shell. (Needs to be defined in this level)
+  #programs.zsh.enable = true;
+  #users.defaultUserShell = pkgs.zsh;
 
-  # Las siguientes opciones solo las puede ejecutar ROOT, por eso no estan en modulos.
-
-  # Enable flakes
+  # Fundamental nixos settings, do not change. 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
-
-  # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
   system.stateVersion = "24.05";
 

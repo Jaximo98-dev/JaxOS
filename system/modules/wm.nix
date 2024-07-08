@@ -1,10 +1,12 @@
-# wm, usando i3.
+#
+# Window manager using i3.
+#
 { config, pkgs, ... }:
 {
-  # i3 configuration
+  # unknown
   environment.pathsToLink = ["/libexec"];
 
-  # Configure keymap in X11
+  # i3 configuration, uses i3lock
   services.xserver = {
     enable = true;
 
