@@ -17,8 +17,7 @@
   };
 
   # Set zsh as main shell. (Needs to be defined in this level)
-  #programs.zsh.enable = true;
-  #users.defaultUserShell = pkgs.zsh;
+  users.defaultUserShell = pkgs.zsh;
 
   # Laptop performance profile
   services.tlp = {

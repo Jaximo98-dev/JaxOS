@@ -10,6 +10,7 @@
 
     ./modules/neovim.nix        # Code editor
     ./modules/polybar.nix       # Bar
+    ./modules/git.nix       # Bar
 
   ];
 
@@ -19,8 +20,6 @@
     packages = with pkgs; [
       # Fundamentales/Cimientos
       home-manager
-      git
-      gh
       gnumake
       thefuck
       cowsay      # Para probar cosas
