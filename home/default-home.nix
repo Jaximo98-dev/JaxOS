@@ -36,9 +36,7 @@
       #chrome     # TODO: Buscar fork limpio, como mercury
       discord     # TODO: Buscar como poner betterdiscord
       
-
-      (if(device == "laptop") then [brightnessctl] else [])     # Keyboad backlight for laptop
-    ];
+    ] ++ lib.optionals (device == "laptop") [brightnessctl];  # Keyboad backlight for laptop
 
     stateVersion = "24.05";
   };

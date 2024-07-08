@@ -12,8 +12,7 @@
   # Configure and enable Networking
   networking.networkmanager.enable = true;
   networking.hostName = "Jaximo_dev";
-  networking.wireless.enable = if (device == "laptop") then true else false;
-  networking.wireless.interfaces = if (device == "laptop") then ["wlo1"] else [];
+  networking.networkmanager.enable = if (device == "laptop") then true else false;
 
   # pkgs.brightnessctl is in charge of keyboard backlight for laptop, check in home.
 }
