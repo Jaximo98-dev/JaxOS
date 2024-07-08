@@ -42,6 +42,9 @@
       };
   };
 
+  # Local clock for dualboot desync issues
+  time.hardwareClockInLocalTime = true;
+
   # Fundamental nixos settings, do not change. 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
   nixpkgs.config.allowUnfree = true;
