@@ -4,6 +4,7 @@
 	
 	#boot.loader.systemd-boot.enable = true;
 	boot.loader.efi.canTouchEfiVariables = true;
+	boot.loader.timeout = 15;
 
 	boot.loader.grub = {
 		enable = true;	
@@ -15,6 +16,5 @@
 		configurationLimit = 20;
 		extraEntriesBeforeNixOS = true;
 		default = 21;
-		timeout = 0;
 	};
 }
