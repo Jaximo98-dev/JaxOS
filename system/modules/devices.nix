@@ -9,7 +9,7 @@
 
   # Configure and enable Networking
   networking.networkmanager.enable = true;
-  networking.hostName = "Jaximo-OS"; # Define your hostname.
+  networking.hostName = "Jaximo_dev"; # Define your hostname.
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.  #TODO portatil
 
 }

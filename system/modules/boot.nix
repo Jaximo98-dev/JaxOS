@@ -1,16 +1,16 @@
 #Bootloader, con GRUB.
-{ config, pkgs, ... }:
+{ config, pkgs, device, ... }:
 {
 	
 	#boot.loader.systemd-boot.enable = true;
 	boot.loader.efi.canTouchEfiVariables = true;
 
 	boot.loader.grub = {
-		enable = true;
+		enable = true;	
 		useOSProber = true;
 		efiSupport = true;
 		device = "nodev";
-		#gfxmodeEfi = "2560x1440"; #TODO: Hacerlo adaptativo
+		gfxmodeEfi = if (device == "desktop") then "2560x1440" else "1920x1080";
 		fontSize = 42;
 		configurationLimit = 20;
 		extraEntriesBeforeNixOS = true;

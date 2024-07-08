@@ -16,6 +16,7 @@
 	outputs = { self, nixpkgs, home-manager, ...}:
 		let
       username = "jaximo";
+      device = "desktop";
 
 			lib = nixpkgs.lib;
 			system = "x86_64-linux";
@@ -23,10 +24,8 @@
 		in {
       nixosConfigurations = {
 				desktop = lib.nixosSystem {
-
 					inherit system;
-          specialArgs = { inherit username ; };
-
+          specialArgs = { inherit username ; device = "desktop"; };
 
 					modules = [
             ./system/configuration.nix
@@ -40,16 +39,14 @@
                     ./home/default-home.nix
                     ]; 
                 };
-                home-manager.extraSpecialArgs = { inherit username ; };
+                home-manager.extraSpecialArgs = { inherit username device; };
              }
           ];
 				};
 
 				laptop = lib.nixosSystem {
-
 					inherit system;
-          specialArgs = { inherit username ; };
-
+          specialArgs = { inherit username ; device = "laptop"; };
 
 					modules = [
             ./system/configuration.nix
@@ -63,7 +60,7 @@
                     ./home/default-home.nix
                     ]; 
                 };
-                home-manager.extraSpecialArgs = { inherit username ; };
+                home-manager.extraSpecialArgs = { inherit username device; };
              }
           ];
 				};
