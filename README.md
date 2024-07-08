@@ -11,8 +11,13 @@
   ## Todo
   - [ ] Add one generic profile, that does not use preset hardware configuration files.
   - [ ] Introduce proper differences between profiles, like resolution, trackpad, wifi, ...
-  - [ ] Install neovim with plugins, zed editor, and finish the whole setup...
+  - [ ] Install neovim with plugins, and finish the whole setup...
   - [ ] Rice
+
+  - [ ] Alacritty configuration
+  - [ ] Tmux configuration
+  - [ ] Polybar configuration
+  - [ ] Neovim configuration
 
   ---
   sers.defaultUserShell = pkgs.zsh;

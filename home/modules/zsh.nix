@@ -4,7 +4,6 @@
   programs.zsh = {
     enable = true;
 
-    # zsh settings
     enableCompletion = true;
     autosuggestion.enable = true;
     syntaxHighlighting.enable = true;
