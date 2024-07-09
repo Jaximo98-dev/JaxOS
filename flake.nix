@@ -41,6 +41,7 @@
                     ]; 
                 };
                 home-manager.extraSpecialArgs = { inherit username device; };
+                home-manager.backupFileExtension = "backup";
              }
           ];
 				};
@@ -62,6 +63,7 @@
                     ]; 
                 };
                 home-manager.extraSpecialArgs = { inherit username device; };
+                home-manager.backupFileExtension = "backup";
              }
           ];
 				};
