@@ -1,6 +1,7 @@
-{ config, pkgs, ...}:
-
-{
+{ config, pkgs, lib, ...}:
+let 
+  nur-no-pkgs = import (builtins.fetchTarball "https://github.com/nix-community/NUR/archive/master.tar.gz") {};
+in {
   programs.firefox = {
     enable = true;
 
@@ -10,7 +11,7 @@
       search.default = "DuckDuckGo";
       search.force = true;
 
-      extensions = with pkgs.nur.repos.rycee.firefox-addons; [
+      extensions = with nur-no-pkgs.repos.rycee.firefox-addons; [
         darkreader
         octotree
         ublock-origin
