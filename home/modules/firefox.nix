@@ -9,7 +9,7 @@
       search.default = "DuckDuckGo";
       search.force = true;
 
-      extensions = with pkgs.nur.repos.rycee.firefox-addons; [
+      extensions = with config.nur.repos.rycee.firefox-addons; [
         darkreader
         octotree
         ublock-origin

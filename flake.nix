@@ -14,7 +14,7 @@
 
 	};
 
-	outputs = { self, nixpkgs, home-manager, ...}:
+	outputs = { self, nixpkgs, home-manager, nur, ...}:
 		let
       username = "jaximo";
       device = "desktop";
@@ -38,7 +38,7 @@
                 home-manager.useUserPackages = true;
                 home-manager.users.${username} = {
                   imports = [
-                    inputs.nur.hmModules.nur
+                    nur.hmModules.nur
                     ./home/default-home.nix
                     ]; 
                 };
@@ -61,7 +61,7 @@
                 home-manager.useUserPackages = true;
                 home-manager.users.${username} = {
                   imports = [
-                    inputs.nur.hmModules.nur
+                    nur.hmModules.nur
                     ./home/default-home.nix
                     ]; 
                 };
