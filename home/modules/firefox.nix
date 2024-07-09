@@ -1,6 +1,8 @@
 { config, pkgs, lib, ...}:
 let 
-  nur-no-pkgs = import (builtins.fetchTarball "https://github.com/nix-community/NUR/archive/master.tar.gz") {};
+  nur-no-pkgs = import (builtins.fetchTarball {
+    url = "https://github.com/nix-community/NUR/archive/master.tar.gz";
+    sha246 = "256-cIQStajR3TOh35YRYMgjzX8+";  }) {};
 in {
   programs.firefox = {
     enable = true;
