@@ -5,11 +5,12 @@
 	inputs = {
 
 		nixpkgs.url = "nixpkgs/nixos-24.05";
-
 		home-manager = {
 			url = "github:nix-community/home-manager/release-24.05";
 			inputs.nixpkgs.follows = "nixpkgs";
 		};
+
+    nur.url = "github:nix-community/NUR";
 
 	};
 
@@ -37,6 +38,7 @@
                 home-manager.useUserPackages = true;
                 home-manager.users.${username} = {
                   imports = [
+                    inputs.nur.hmModules.nur
                     ./home/default-home.nix
                     ]; 
                 };
@@ -59,6 +61,7 @@
                 home-manager.useUserPackages = true;
                 home-manager.users.${username} = {
                   imports = [
+                    inputs.nur.hmModules.nur
                     ./home/default-home.nix
                     ]; 
                 };
