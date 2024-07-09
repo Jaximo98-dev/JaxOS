@@ -20,7 +20,7 @@
         youtube-shorts-block
       ];
 
-      settings = [
+      settings = {
         "signon.rememberSignons" = false;
         "identity.fxaccounts.enabled" = false;
 
@@ -231,7 +231,7 @@
         "extensions.formautofill.creditCards.enabled" = false;
         "extensions.formautofill.addresses.enabled" = false;
         #"browser.download.useDownloadDir" = true;
-      ];
+      };
     };
   };
 }
