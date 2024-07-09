@@ -8,9 +8,10 @@
     ./modules/alacritty.nix     # Terminal emulator
     ./modules/tmux.nix          # Session manager
 
-    ./modules/neovim.nix        # Code editor
-    ./modules/polybar.nix       # Bar
-    ./modules/git.nix       # Bar
+    ./modules/neovim.nix        # code editor 1
+    ./modules/polybar.nix       # bar
+    ./modules/git.nix           # git
+    ./modules/firefox.nix       # firefox
 
   ];
 
@@ -22,19 +23,19 @@
       home-manager
       gnumake
       thefuck
-      cowsay      # Para probar cosas
+      cowsay          # Para probar cosas
       tldr
       brightnessctl   # Keyboad backlight for laptop
-      rofi        # Alternativa a dmenu
+      rofi            # Alternativa a dmenu
       
       # Editors
       vscodium
       zed-editor
 
       # Apps
-      firefox     # TODO: Cambiar por otro fork
-      #chrome     # TODO: Buscar fork limpio, como mercury
-      discord     # TODO: Buscar como poner betterdiscord
+      (discord.override {
+        withOpenASAR = true;
+      })
       
     ];
 
