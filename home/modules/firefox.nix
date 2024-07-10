@@ -231,66 +231,66 @@
         "extensions.formautofill.addresses.enabled" = false;
         #"browser.download.useDownloadDir" = true;
       };
-
-      policies = {
-        NoDefaultBookmarks = true;
-
-        SearchEngines = {
-          PreventInstalls = true;
-          Add = [
-            {
-              Name = "MyNixOS";
-              URLTemplate = "https://mynixos.com/search?q={searchTerms}";
-              Method = "GET";
-              Description = "Search MyNixOS packages";
-            }
-            {
-              Name = "RAE";
-              URLTemplate = "https://dle.rae.es/{searchTerms}";
-              Method = "GET";
-              Description = "Spanish Real Academy Dictionary";
-            }
-          ];
-          Remove = [
-            "Amazon.com"
-            "Bing"
-            "Google"
-            "Qwant"
-            "Wikipedia (en)"
-          ];
-				  Default = "DuckDuckGo";
-        };
-
-        Bookmarks = [
-          {
-            Title = "Gmail";
-            URL = "https://mail.google.com/";
-            Folder = "Private";
-          }
-          {
-            Title = "CV";
-            URL = "https://informatica.cv.uma.es/";
-            Folder = "Private";
-          }
-          {
-            Title = "ChatGPT";
-            URL = "https://chat.openai.com/chat";
-          }
-          {
-            Title = "WhatsApp Web";
-            URL = "https://web.whatsapp.com/";
-            Folder = "Private";
-          }
-          {
-            Title = "Gitbook";
-            URL = "https://app.gitbook.com/o/JVk3cZvIVIu83u4yjTrl/s/cUFXoXiseORYBckkMbVy/papeles-de-diseno/mecanicas-principales";
-          }
-          {
-            Title = "Github";
-            URL = "https://github.com/users/Jaximo98-dev/";
-          }
-        ];
-      };
     };
+
+    policies = {
+    NoDefaultBookmarks = true;
+
+    SearchEngines = {
+      PreventInstalls = true;
+      Add = [
+        {
+          Name = "MyNixOS";
+          URLTemplate = "https://mynixos.com/search?q={searchTerms}";
+          Method = "GET";
+          Description = "Search MyNixOS packages";
+        }
+        {
+          Name = "RAE";
+          URLTemplate = "https://dle.rae.es/{searchTerms}";
+          Method = "GET";
+          Description = "Spanish Real Academy Dictionary";
+        }
+      ];
+      Remove = [
+        "Amazon.com"
+        "Bing"
+        "Google"
+        "Qwant"
+        "Wikipedia (en)"
+      ];
+      Default = "DuckDuckGo";
+    };
+
+    Bookmarks = [
+      {
+        Title = "Gmail";
+        URL = "https://mail.google.com/";
+        Folder = "Private";
+      }
+      {
+        Title = "CV";
+        URL = "https://informatica.cv.uma.es/";
+        Folder = "Private";
+      }
+      {
+        Title = "ChatGPT";
+        URL = "https://chat.openai.com/chat";
+      }
+      {
+        Title = "WhatsApp Web";
+        URL = "https://web.whatsapp.com/";
+        Folder = "Private";
+      }
+      {
+        Title = "Gitbook";
+        URL = "https://app.gitbook.com/o/JVk3cZvIVIu83u4yjTrl/s/cUFXoXiseORYBckkMbVy/papeles-de-diseno/mecanicas-principales";
+      }
+      {
+        Title = "Github";
+        URL = "https://github.com/users/Jaximo98-dev/";
+      }
+    ];
+  };
   };
 }
