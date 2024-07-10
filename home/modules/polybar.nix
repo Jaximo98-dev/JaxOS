@@ -1,4 +1,4 @@
-{ config, pkgs, ...}:
+{ config, pkgs, device, ...}:
 #https://github.com/souravrs999/Dot-files/blob/master/polybar/config https://myrices.datsfilipe.dev/ 
 {
   services.polybar = {
@@ -25,11 +25,13 @@
         radius = 0;
         padding-left = 1;
         padding-right = 1;
-        module-margin = 0;
 
+        separator = "|";
+
+        module-margin = 0;
         modules-left = "i3";
         modules-center = "date";
-        modules-right = "network cpu memory battery";
+        modules-right = if(device == "laptop") then "network cpu memory battery volume" else "cpu memory volume";
       };
 
       "module/memory" = {
@@ -82,7 +84,6 @@
       #TODO: Colorme
       "module/i3" = {
         type = "internal/i3";
-        strip-wsnumbers = false;
         format = "<label-state> <label-mode>";
         label-focused = "%index%";
         label-focused-foreground = "#1DB954";
@@ -114,7 +115,7 @@
       "module/date" = {
         type = "internal/date";
         interval = 1.0;
-        date = "%A, %d %B %I:%M %p";
+        date = "%A, %d %B %H:%M";
       };
 
       #TODO: Finish this module https://github.com/polybar/polybar/wiki/Module:-backlight
