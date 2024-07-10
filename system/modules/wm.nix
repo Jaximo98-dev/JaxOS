@@ -13,6 +13,7 @@
     windowManager.i3 = {
       enable = true;
       extraPackages = with pkgs; [ i3lock ];
+      config.bars = {};
     };
   };
 
