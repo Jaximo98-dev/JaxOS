@@ -1,5 +1,10 @@
 { config, pkgs, ...}:
 {
+  home.file."firefox-theme" = {
+    target = ".mozilla/firefox/jaximo/chrome/firefox-theme";
+    source = (fetchTarball "https://github.com/FirefoxCSSThemers/GruvFox/archive/master.tar.gz");
+  };
+
   programs.firefox = {
     enable = true;
 
@@ -19,6 +24,13 @@
         behave
         youtube-shorts-block
       ];
+
+      userChrome = ''
+        @import url("firefox-theme/chrome/userChrome.css");
+      '';
+      userContent = ''
+        /* @import url("firefox-theme/chrome/userContent.css"); */
+      '';
 
       settings = {
         "signon.rememberSignons" = false;
