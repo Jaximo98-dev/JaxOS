@@ -27,6 +27,7 @@
       tldr
       brightnessctl   # Keyboad backlight for laptop
       rofi            # Alternativa a dmenu
+      pavucontrol
       
       # Editors
       vscodium
