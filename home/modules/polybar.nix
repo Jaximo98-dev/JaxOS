@@ -6,7 +6,7 @@
     packages = pkgs.polybar.override {
       i3Support = true;
       pulseSupport = true;
-    }
+    };
     script = ''polybar -q -r bar &'';
   
     settings = {
