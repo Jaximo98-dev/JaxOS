@@ -18,6 +18,8 @@
   - [ ] Tmux configuration
   - [ ] Polybar configuration
   - [ ] Neovim configuration
+  - [x] Firefox configuration
+  - [ ] Obsidian configuration with sync
 
   ---
   sers.defaultUserShell = pkgs.zsh;
