@@ -111,7 +111,7 @@
         "mousewheel.default.delta_multiplier_y" = 300;
 
         # --- Securefox ---
-    # --- Tracking Protection ---
+        # --- Tracking Protection ---
         "browser.contentblocking.category" = "strict";
         "urlclassifier.trackingSkipURLs" = "*.reddit.com, *.twitter.com, *.twimg.com, *.tiktok.com";
         "urlclassifier.features.socialtracking.skipURLs" = "*.instagram.com, *.twitter.com, *.twimg.com";
@@ -121,24 +121,24 @@
         "browser.uitour.enabled" = false;
         "privacy.globalprivacycontrol.enabled" = true;
 
-    # --- OCSP & Certs / HPKP ---
+        # --- OCSP & Certs / HPKP ---
         "security.OCSP.enabled" = 0;
         "security.remote_settings.crlite_filters.enabled" = true;
         "security.pki.crlite_mode" = 2;
 
-    # --- SSL / TLS ---
+        # --- SSL / TLS ---
         "security.ssl.treat_unsafe_negotiation_as_broken" = true;
         "browser.xul.error_pages.expert_bad_cert" = true;
         "security.tls.enable_0rtt_data" = false;
 
-    # --- Disk Avoidance ---
+        # --- Disk Avoidance ---
         "browser.privatebrowsing.forceMediaMemoryCache" = true;
         "browser.sessionstore.interval" = 60000;
 
-    # --- Shutdown & Sanitizing ---
+        # --- Shutdown & Sanitizing ---
         "privacy.history.custom" = true;
 
-    # --- Search / URL Bar ---
+        # --- Search / URL Bar ---
         "browser.search.separatePrivateDefault.ui.enabled" = true;
         "browser.urlbar.update2.engineAliasRefresh" = true;
         "browser.search.suggest.enabled" = false;
@@ -149,44 +149,44 @@
         "security.insecure_connection_text.pbmode.enabled" = true;
         "network.IDN_show_punycode" = true;
 
-    # --- HTTPS-First Policy ---
+        # --- HTTPS-First Policy ---
         "dom.security.https_first" = true;
         "dom.security.https_first_schemeless" = true;
 
-    # --- Passwords ---
+        # --- Passwords ---
         "signon.formlessCapture.enabled" = false;
         "signon.privateBrowsingCapture.enabled" = false;
         "network.auth.subresource-http-auth-allow" = 1;
         "editor.truncate_user_pastes" = false;
 
-    # --- Mixed Content + Cross-Site ---
+        # --- Mixed Content + Cross-Site ---
         "security.mixed_content.block_display_content" = true;
         "security.mixed_content.upgrade_display_content" = true;
         "security.mixed_content.upgrade_display_content.image" = true;
         "pdfjs.enableScripting" = false;
         "extensions.postDownloadThirdPartyPrompt" = false;
 
-    # --- Headers / Referers ---
+        # --- Headers / Referers ---
         "network.http.referer.XOriginTrimmingPolicy" = 2;
 
-    # --- Containers ---
+        # --- Containers ---
         "privacy.userContext.ui.enabled" = true;
 
-    # --- WebRTC ---
+        # --- WebRTC ---
         "media.peerconnection.ice.proxy_only_if_behind_proxy" = true;
         "media.peerconnection.ice.default_address_only" = true;
 
-    # --- Safe Browsing ---
+        # --- Safe Browsing ---
         "browser.safebrowsing.downloads.remote.enabled" = false;
 
-    # --- Mozilla ---
+        # --- Mozilla ---
         "permissions.default.desktop-notification" = 2;
         "permissions.default.geo" = 2;
         "geo.provider.network.url" = "https://location.services.mozilla.com/v1/geolocate?key=%MOZILLA_API_KEY%";
         "permissions.manager.defaultsUrl" = "";
         "webchannel.allowObject.urlWhitelist" = "";
 
-    # --- Telemetry ---
+        # --- Telemetry ---
         "datareporting.policy.dataSubmissionEnabled" = false;
         "datareporting.healthreport.uploadEnabled" = false;
         "toolkit.telemetry.unified" = false;
@@ -204,17 +204,17 @@
         "browser.newtabpage.activity-stream.feeds.telemetry" = false;
         "browser.newtabpage.activity-stream.telemetry" = false;
 
-    # --- Experiments ---
+        # --- Experiments ---
         "app.shield.optoutstudies.enabled" = false;
         "app.normandy.enabled" = false;
         "app.normandy.api_url" = "";
 
-    # --- Crash Reports ---
+        # --- Crash Reports ---
         "breakpad.reportURL" = "";
         "browser.tabs.crashReporting.sendReport" = false;
         "browser.crashReports.unsubmittedCheck.autoSubmit2" = false;
 
-    # --- Detection ---
+        # --- Detection ---
         "captivedetect.canonicalURL" = "";
         "network.captive-portal-service.enabled" = false;
         "network.connectivity-service.enabled" = false;
@@ -230,6 +230,66 @@
         "extensions.formautofill.creditCards.enabled" = false;
         "extensions.formautofill.addresses.enabled" = false;
         #"browser.download.useDownloadDir" = true;
+      };
+
+      policies = {
+        NoDefaultBookmarks = true;
+
+        SearchEngines = {
+          PreventInstalls = true;
+          Add = [
+            {
+              Name = "MyNixOS";
+              URLTemplate = "https://mynixos.com/search?q={searchTerms}";
+              Method = "GET";
+              Description = "Search MyNixOS packages";
+            }
+            {
+              Name = "RAE";
+              URLTemplate = "https://dle.rae.es/{searchTerms}";
+              Method = "GET";
+              Description = "Spanish Real Academy Dictionary";
+            }
+          ];
+          Remove = [
+            "Amazon.com"
+            "Bing"
+            "Google"
+            "Qwant"
+            "Wikipedia (en)"
+          ];
+				  Default = "DuckDuckGo";
+        };
+
+        Bookmarks = [
+          {
+            Title = "Gmail";
+            URL = "https://mail.google.com/";
+            Folder = "Private";
+          }
+          {
+            Title = "CV";
+            URL = "https://informatica.cv.uma.es/";
+            Folder = "Private";
+          }
+          {
+            Title = "ChatGPT";
+            URL = "https://chat.openai.com/chat";
+          }
+          {
+            Title = "WhatsApp Web";
+            URL = "https://web.whatsapp.com/";
+            Folder = "Private";
+          }
+          {
+            Title = "Gitbook";
+            URL = "https://app.gitbook.com/o/JVk3cZvIVIu83u4yjTrl/s/cUFXoXiseORYBckkMbVy/papeles-de-diseno/mecanicas-principales";
+          }
+          {
+            Title = "Github";
+            URL = "https://github.com/users/Jaximo98-dev/";
+          }
+        ];
       };
     };
   };
