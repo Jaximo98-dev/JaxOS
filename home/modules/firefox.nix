@@ -9,6 +9,7 @@
       search.default = "DuckDuckGo";
       search.force = true;
 
+      # TODO: Enable per default
       extensions = with config.nur.repos.rycee.firefox-addons; [
         darkreader
         octotree
@@ -229,6 +230,10 @@
         "signon.firefoxRelay.feature" = "";
         "extensions.formautofill.creditCards.enabled" = false;
         "extensions.formautofill.addresses.enabled" = false;
+
+        "extensions.autoDisableScopes" = 0;
+        "extensions.enabledScopes" = 15;
+
         #"browser.download.useDownloadDir" = true;
       };
     };
@@ -236,6 +241,7 @@
     policies = {
     NoDefaultBookmarks = true;
 
+    # TODO: Not working...
     SearchEngines = {
       PreventInstalls = true;
       Add = [
