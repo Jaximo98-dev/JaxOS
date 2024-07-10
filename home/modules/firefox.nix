@@ -2,7 +2,12 @@
 {
   home.file."firefox-theme" = {
     target = ".mozilla/firefox/jaximo/chrome/firefox-theme";
-    source = (fetchTarball "https://github.com/FirefoxCSSThemers/GruvFox/archive/master.tar.gz");
+    source = pkgs.fetchFromGitHub {
+      owner = "FirefoxCSSThemers";
+      repo = "GruvFox";
+      rev = "066681d7f123e359ab564281a148d915a1c25c64";
+      hash = "sha256-6+h84ZxEnhDysGD6JQQisyJFqP0RRHptsVjrSw9UKps=";
+    };
   };
 
   programs.firefox = {
