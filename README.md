@@ -19,6 +19,7 @@
   - [ ] Polybar configuration
   - [ ] Neovim configuration
   - [x] Firefox configuration
+  - [ ] Spotify configuration
   - [ ] Obsidian configuration with sync
 
   ---
