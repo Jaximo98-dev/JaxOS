@@ -1,16 +1,14 @@
 { config, pkgs, ...}:
-
+#https://github.com/souravrs999/Dot-files/blob/master/polybar/config https://myrices.datsfilipe.dev/ 
 {
   services.polybar = {
     enable = true;
-    script = ''
-polybar top &
-polybar bottom &
-'';
+    script = ''polybar bottom &'';
   
     settings = {
 
-      "bar/mybar" = {
+      "bar/bar" = {
+        font-0 = "JetBrains Mono Nerd Font:size=10;3";
         scroll-up = "#i3.prev";
         scroll-down = "#i3.next";
       };

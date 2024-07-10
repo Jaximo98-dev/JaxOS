@@ -42,6 +42,11 @@
       };
   };
 
+  # Fonts
+  fonts.fonts = with pkgs; [
+  (nerdfonts.override { fonts = [ "FiraCode" "JetBrainsMono" ]; })
+  ];
+
   # Local clock for dualboot desync issues
   time.hardwareClockInLocalTime = true;
 

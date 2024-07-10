@@ -11,8 +11,8 @@
   ## Todo
   - [ ] Add one generic profile, that does not use preset hardware configuration files.
   - [ ] Introduce proper differences between profiles, like resolution, trackpad, wifi, ...
-  - [ ] Install neovim with plugins, and finish the whole setup...
-  - [ ] Rice
+  - [ ] Secrets
+  - [ ] Rice using nix-style
 
   - [ ] Alacritty configuration
   - [ ] Tmux configuration
