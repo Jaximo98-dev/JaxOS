@@ -63,7 +63,7 @@
         type = "internal/battery";
         full-at = 99;
         low-at = 15;
-        battery = "BAT0";
+        battery = "BAT1";
         adapter = "ADP1";
         time-format = "%H:%M";
         format-charging = "<label-charging>";
