@@ -11,6 +11,8 @@ in
       enable = true;
       config = {
 
+        bars = {};
+
         terminal = "alacritty";
         window.titlebar = false;
 
