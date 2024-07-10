@@ -2,7 +2,7 @@
 #https://github.com/souravrs999/Dot-files/blob/master/polybar/config https://myrices.datsfilipe.dev/ 
 {
   services.polybar = {
-    enable = true;
+    enable = false;
     script = ''polybar -q -r bar'';
   
     settings = {

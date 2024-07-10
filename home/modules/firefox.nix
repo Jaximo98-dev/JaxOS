@@ -34,7 +34,7 @@
         @import url("firefox-theme/chrome/userChrome.css");
       '';
       userContent = ''
-        /* @import url("firefox-theme/chrome/userContent.css"); */
+        @import url("firefox-theme/chrome/userContent.css");
       '';
 
       settings = {
