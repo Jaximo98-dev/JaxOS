@@ -25,14 +25,14 @@
 
         modules-left = "i3";
         modules-center = "date";
-        modules-right = "network cpu memory battery";
+        modules-right = "network cpu memory battery volume";
       };
 
       "module/memory" = {
         type = "internal/memory";
         interval = 3;
         format = "<label>";
-        label = "RAM %gb_used%/%gb_free%"
+        label = "RAM %gb_used%/%gb_free%";
         label-padding = 1;
       };
 
