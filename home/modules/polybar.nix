@@ -82,7 +82,7 @@
       #TODO: Colorme
       "module/i3" = {
         type = "internal/i3";
-        strip-wsnumbers = true;
+        strip-wsnumbers = false;
         format = "<label-state> <label-mode>";
         label-focused = "%index%";
         label-focused-foreground = "#1DB954";
