@@ -2,8 +2,12 @@
 #https://github.com/souravrs999/Dot-files/blob/master/polybar/config https://myrices.datsfilipe.dev/ 
 {
   services.polybar = {
-    enable = false;
-    script = ''polybar -q -r bar'';
+    enable = true;
+    packages = pkgs.polybar.override {
+      i3Support = true;
+      pulseSupport = true;
+    }
+    script = ''polybar -q -r bar &'';
   
     settings = {
 
@@ -25,7 +29,7 @@
 
         modules-left = "i3";
         modules-center = "date";
-        modules-right = "network cpu memory battery volume";
+        modules-right = "network cpu memory battery";
       };
 
       "module/memory" = {
@@ -97,6 +101,7 @@
         
       };
 
+      #TODO: Add volume module
       "module/volume" = {
         type = "internal/pulseaudio";
         format.volume = "<ramp-volume> <label-volume>";
@@ -121,7 +126,6 @@
         label-padding = 1;
       };
 
-      #TODO: Add volume module
     };
   };
 }
