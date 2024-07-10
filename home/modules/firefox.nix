@@ -253,7 +253,7 @@
     policies = {
     NoDefaultBookmarks = true;
 
-    # TODO: Not working...
+    # TODO: Not working...  https://github.com/nix-community/home-manager/issues/3569
     SearchEngines = {
       PreventInstalls = true;
       Add = [
