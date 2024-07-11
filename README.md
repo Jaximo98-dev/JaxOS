@@ -10,13 +10,13 @@
 
   ## Todo
   - [ ] Add one generic profile, that does not use preset hardware configuration files.
-  - [ ] Introduce proper differences between profiles, like resolution, trackpad, wifi, ...
+  - [ ] Fingerprint for laptop
   - [ ] Secrets
   - [ ] Rice using nix-style
 
   - [ ] Alacritty configuration
   - [ ] Tmux configuration
-  - [ ] Polybar configuration
+  - [x] Polybar configuration
   - [ ] Neovim configuration
   - [x] Firefox configuration
   - [ ] Spotify configuration
