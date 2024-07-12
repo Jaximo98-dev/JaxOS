@@ -12,6 +12,7 @@
   - [ ] Add one generic profile, that does not use preset hardware configuration files.
   - [ ] Fingerprint for laptop
   - [ ] Secrets
+  - [ ] Multi monitor fix
   - [ ] Rice using nix-style
 
   - [ ] Alacritty configuration
