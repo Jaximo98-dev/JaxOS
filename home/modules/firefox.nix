@@ -252,6 +252,9 @@
         "extensions.enabledScopes" = 15;
 
         #"browser.download.useDownloadDir" = true;
+        "browser.translations.enable" = false;
+        "browser.translations.automaticallyPopup" = false;
+        "browser.translations.panelShown" = false;
       };
     };
 

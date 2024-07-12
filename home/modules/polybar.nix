@@ -116,7 +116,7 @@
       #TODO: Add volume module
       "module/volume" = {
         type = "internal/pulseaudio";
-        format.volume = "<ramp-volume> <label-volume>";
+        format.volume = "Vol <ramp-volume> <label-volume>";
         label.muted.text = "0";
         label.muted.foreground = "#666";
         ramp.volume = ["." "o" "O"];
