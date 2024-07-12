@@ -31,7 +31,7 @@
         module-margin = 0;
         modules-left = "i3";
         modules-center = "date";
-        modules-right = if(device == "laptop") then "network cpu memory battery volume" else "cpu memory volume";
+        modules-right = if(device == "laptop") then "network-wire network-wireless cpu memory battery volume" else "cpu memory volume";
       };
 
       "module/memory" = {
@@ -42,7 +42,18 @@
         label-padding = 1;
       };
 
-      "module/network" = {
+      "module/network-wire" = {
+        type = "internal/network";
+        interval = 3;
+        interface = "eth0";
+        accumulative-stats = true;
+        label-connected = "Net(W) %downspeed:8%";
+        label-disconnected = "";
+        format-connected = "<label-connected>";
+        format-disconnected = "";
+      };
+
+      "module/network-wireless" = {
         type = "internal/network";
         interval = 3;
         interface = "wlo1";
