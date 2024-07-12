@@ -15,6 +15,8 @@ in
 
         terminal = "alacritty";
         window.titlebar = false;
+        window.border = 0;
+        
 
         startup = [
           {command = "i3-msg 'workspace 1: web; exec firefox; for_window [class=\"Firefox\"] move to workspace 1'";}

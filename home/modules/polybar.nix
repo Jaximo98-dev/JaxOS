@@ -31,7 +31,7 @@
         module-margin = 0;
         modules-left = "i3";
         modules-center = "date";
-        modules-right = if(device == "laptop") then "network-wire network-wireless cpu memory battery volume backlight" else "cpu memory volume";
+        modules-right = if(device == "laptop") then "network-wire network-wireless cpu memory battery volume" else "cpu memory volume";
       };
 
       "module/memory" = {
@@ -116,7 +116,7 @@
       #TODO: Add volume module
       "module/volume" = {
         type = "internal/pulseaudio";
-        format.volume = "Vol <ramp-volume> <label-volume>";
+        format.volume = "Vol <label-volume>";
         label.muted.text = "0";
         label.muted.foreground = "#666";
         ramp.volume = ["." "o" "O"];
