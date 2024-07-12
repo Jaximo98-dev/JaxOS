@@ -256,6 +256,7 @@
         "browser.translations.automaticallyPopup" = false;
         "browser.translations.panelShown" = false;
         "media.videocontrols.picture-in-picture.enabled" = false;
+        "toolkit.legacyUserProfileCustomizations.stylesheets" = true;
       };
     };
 

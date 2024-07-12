@@ -25,13 +25,13 @@
       thefuck
       cowsay          # Para probar cosas
       tldr
+      btop            # Performance monitor
       brightnessctl   # Keyboad backlight for laptop
       rofi            # Alternativa a dmenu
       pavucontrol
       
       # Editors
       vscodium
-      zed-editor
 
       # Apps
       (discord.override {
