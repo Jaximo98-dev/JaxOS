@@ -255,6 +255,7 @@
         "browser.translations.enable" = false;
         "browser.translations.automaticallyPopup" = false;
         "browser.translations.panelShown" = false;
+        "media.videocontrols.picture-in-picture.enabled" = false;
       };
     };
 
