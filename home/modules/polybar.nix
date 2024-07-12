@@ -31,7 +31,7 @@
         module-margin = 0;
         modules-left = "i3";
         modules-center = "date";
-        modules-right = if(device == "laptop") then "network-wire network-wireless cpu memory battery volume" else "cpu memory volume";
+        modules-right = if(device == "laptop") then "network-wire network-wireless cpu memory battery volume backlight" else "cpu memory volume";
       };
 
       "module/memory" = {
