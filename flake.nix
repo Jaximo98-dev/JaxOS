@@ -42,7 +42,7 @@
                     ./home/default-home.nix
                     ]; 
                 };
-                home-manager.extraSpecialArgs = { inherit username device; };
+                home-manager.extraSpecialArgs = { inherit username ; device = "desktop"; };
                 home-manager.backupFileExtension = "backup";
              }
           ];
@@ -65,7 +65,7 @@
                     ./home/default-home.nix
                     ]; 
                 };
-                home-manager.extraSpecialArgs = { inherit username device; };
+                home-manager.extraSpecialArgs = { inherit username ; device = "laptop"; };
                 home-manager.backupFileExtension = "backup";
              }
           ];

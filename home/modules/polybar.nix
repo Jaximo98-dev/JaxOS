@@ -117,9 +117,9 @@
       "module/volume" = {
         type = "internal/pulseaudio";
         format.volume = "<ramp-volume> <label-volume>";
-        label.muted.text = "🔇";
+        label.muted.text = "0";
         label.muted.foreground = "#666";
-        ramp.volume = ["🔈" "🔉" "🔊"];
+        ramp.volume = ["." "o" "O"];
         click.right = "pavucontrol &";
       };
 
