@@ -34,6 +34,7 @@
       vscodium
 
       # Apps
+      obsidian
       (discord.override {
         withOpenASAR = true;
       })

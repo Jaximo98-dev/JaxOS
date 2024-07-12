@@ -4,7 +4,21 @@
   programs.alacritty = {
     enable = true;
     settings = {
-      window.opacity = 1.0;
+      font = {
+        size = 16;
+        bold = {
+          family = "JetBrainsMono Nerd Font";
+          style = "Bold";
+        };
+        italic = {
+          family = "JetBrainsMono Nerd Font";
+          style = "Italic";
+        };
+        normal = {
+          family = "JetBrainsMono Nerd Font";
+          style = "Medium";
+        };
+      };
     };
   };
 }
