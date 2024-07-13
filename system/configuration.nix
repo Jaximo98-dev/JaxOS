@@ -20,6 +20,9 @@
   programs.zsh.enable = true;
   users.defaultUserShell = pkgs.zsh;
 
+  # Fan control
+  programs.coolercontrol.enable = if(device == "laptop") then true else false;
+
   # Laptop performance profile
   services.tlp = {
       enable = if(device == "laptop") then true else false;
