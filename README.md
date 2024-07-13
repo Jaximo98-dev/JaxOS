@@ -15,7 +15,7 @@
   - [ ] Multi monitor fix
   - [ ] Rice using nix-style
 
-  - [ ] Alacritty configuration
+  - [x] Alacritty configuration
   - [ ] Tmux configuration
   - [x] Polybar configuration
   - [ ] Neovim configuration
