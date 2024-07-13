@@ -8,7 +8,7 @@
       pulseSupport = true;
     };
   
-    script = "";
+    script = "polybar bar &";
 
     settings = {
 
