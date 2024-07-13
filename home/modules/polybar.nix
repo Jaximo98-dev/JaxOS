@@ -5,9 +5,8 @@
     enable = true;
     package = pkgs.polybar.override {
       i3Support = true;
-      pulseSupport = true;
+      pulseSupport = tr2ue;
     };
-    #script = ''PATH=$PATH:${pkgs.i3}/bin polybar bar &'';
   
     settings = {
 
