@@ -4,6 +4,7 @@
   programs.alacritty = {
     enable = true;
     settings = {
+      window.decorations = "none";
       font = {
         size = 11;
         bold = {

@@ -16,6 +16,9 @@
     };
   };
 
+  # Graphics fix?
+  services.xserver.videoDrivers = lib.mkIf (device == "laptop") [ "modesetting" ];
+
 
   # Default session
   services.displayManager.defaultSession = "none+i3";
