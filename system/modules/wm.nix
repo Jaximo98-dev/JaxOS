@@ -1,7 +1,7 @@
 #
 # Window manager using i3.
 #
-{ config, pkgs, ... }:
+{ config, pkgs, lib, ... }:
 {
   # unknown
   environment.pathsToLink = ["/libexec"];
