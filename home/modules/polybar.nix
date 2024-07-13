@@ -7,7 +7,7 @@
       i3Support = true;
       pulseSupport = true;
     };
-    script = ''PATH=$PATH:${pkgs.i3}/bin polybar -q -r bar &'';
+    #script = ''PATH=$PATH:${pkgs.i3}/bin polybar bar &'';
   
     settings = {
 

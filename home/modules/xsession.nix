@@ -19,6 +19,7 @@ in
 
 
         startup = [
+          {command = "systemctl --user restart polybar"; always = true; notification = false; }
           {command = "i3-msg 'workspace 1: web; exec firefox; for_window [class=\"Firefox\"] move to workspace 1'";}
           {command = "i3-msg 'workspace 2: code; exec codium ~/JaxOS;for_window [class=\"VSCodium\"] move to workspace 2 '";}     
           #{command = "i3-msg 'workspace 5: ds; exec discord; for_window [class=\"discord\"] move to workspace 5'";} 
