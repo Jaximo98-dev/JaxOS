@@ -8,6 +8,8 @@
       pulseSupport = true;
     };
   
+    script = "";
+
     settings = {
 
       "bar/bar" = {
