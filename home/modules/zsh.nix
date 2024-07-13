@@ -23,7 +23,7 @@
     # Oh my zsh!
     oh-my-zsh = {
       enable = true;
-      plugins = [ "git" "thefuck" ];
+      plugins = [ "git" "thefuck" "colored-man-pages" "zoxide" ];
       theme = "robbyrussell";
     };
   };
