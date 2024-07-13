@@ -302,6 +302,10 @@
         Folder = "Private";
       }
       {
+        Title = "Spotify";
+        URL = "https://open.spotify.com/";
+      }
+      {
         Title = "ChatGPT";
         URL = "https://chat.openai.com/chat";
       }
