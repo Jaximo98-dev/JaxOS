@@ -25,6 +25,7 @@
   };
 
   # Set xservices layout
-  services.xserver.xkb.layout = "es";
+  services.xserver.xkb.layout = "es(winkeys)";
   #services.xserver.xkb.variant = "nodeadkeys";
+  services.xserver.xkb.model = "pc104alt";
 }
