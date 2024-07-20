@@ -26,5 +26,5 @@
 
   # Set xservices layout
   services.xserver.xkb.layout = "es";
-  services.xserver.xkb.variant = "nodeadkeys";
+  #services.xserver.xkb.variant = "nodeadkeys";
 }
