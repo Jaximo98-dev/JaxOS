@@ -1,7 +1,15 @@
-{ config, pkgs, ...}:
+{ config, pkgs, lib, ...}:
 
 {
   programs.neovim = {
     enable = true;
+
+    viAlias = true;
+    vimAlias = true;
+    vimdiffAlias = true;
+
+    extraLuaConfig = builtins.readFile(./nvim/init.lua);
+
+    plugins = with pkgs.vimPlugins
   };
 }
