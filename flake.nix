@@ -11,11 +11,10 @@
 		};
 
     nur.url = "github:nix-community/NUR";
-    stylix.url = "github:danth/stylix";
 
 	};
 
-	outputs = { self, nixpkgs, home-manager, nur, stylix, ...}:
+	outputs = { self, nixpkgs, home-manager, nur, ...}:
 		let
       username = "jaximo";
       device = "desktop";
@@ -39,7 +38,6 @@
                 home-manager.useUserPackages = true;
                 home-manager.users.${username} = {
                   imports = [
-                    stylix.homeManagerModules.stylix
                     nur.hmModules.nur
                     ./home/default-home.nix
                     ]; 
@@ -63,7 +61,6 @@
                 home-manager.useUserPackages = true;
                 home-manager.users.${username} = {
                   imports = [
-                    stylix.homeManagerModules.stylix
                     nur.hmModules.nur
                     ./home/default-home.nix
                     ]; 

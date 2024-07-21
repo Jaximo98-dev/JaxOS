@@ -13,7 +13,8 @@
 
   xdg.configFile = {
   "nvim" = {
-    source = config.lib.file.mkOutOfStoreSymlink "${config.home.homeDirectory}/JaxOS/home/modules/nvim";
+    source = config.lib.file.mkOutOfStoreSymlink ./nvim;#"${config.home.homeDirectory}/JaxOS/home/modules/nvim";
+    recursive = true;
   };
 };
 

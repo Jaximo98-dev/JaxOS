@@ -8,7 +8,6 @@
     ./modules/alacritty.nix     # Terminal emulator
     ./modules/tmux.nix          # Session manager
 
-    ./modules/stylix.nix
     ./modules/neovim.nix        # code editor 1
     ./modules/polybar.nix       # bar
     ./modules/git.nix           # git
@@ -23,6 +22,7 @@
       # Fundamentales/Cimientos
       home-manager
       gnumake
+      tree
       cowsay          # Para probar cosas
       tldr
       thefuck
