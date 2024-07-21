@@ -31,7 +31,7 @@
       
       # Editors
       vscodium
-      goland
+      jetbrains.goland
 
       # Apps
       obsidian
