@@ -23,6 +23,9 @@
   # Fan control
   programs.coolercontrol.enable = if(device == "laptop") then true else false;
 
+  # Composer
+  services.picom.enable = true;
+
   # Laptop performance profile
   services.tlp = {
       enable = if(device == "laptop") then true else false;
