@@ -21,17 +21,17 @@
     packages = with pkgs; [
       # Fundamentales/Cimientos
       home-manager
-      gnumake
-      thefuck
       cowsay          # Para probar cosas
       tldr
       btop            # Performance monitor
       brightnessctl   # Keyboad backlight for laptop
       rofi            # Alternativa a dmenu
       pavucontrol
+      zoxide
       
       # Editors
       vscodium
+      goland
 
       # Apps
       obsidian

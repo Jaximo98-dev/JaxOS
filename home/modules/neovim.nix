@@ -8,6 +8,8 @@
     vimAlias = true;
     vimdiffAlias = true;
 
-    extraLuaConfig = builtins.readFile(./nvim/init.lua);
+    #extraLuaConfig = builtins.readFile(./nvim/init.lua);
   };
+
+  home.file.".config/nvim".source = config.lib.file.mkOutOfStoreSymlink "/home/JaxOS/home/modules/nvim";
 }
