@@ -11,5 +11,10 @@
     #extraLuaConfig = builtins.readFile(./nvim/init.lua);
   };
 
-  home.file.".config/nvim".source = config.lib.file.mkOutOfStoreSymlink "./nvim";
+  xdg.configFile = {
+  "nvim" = {
+    source = config.lib.file.mkOutOfStoreSymlink "${config.home.homeDirectory}/JaxOS/home/modules/nvim";
+  };
+};
+
 }
