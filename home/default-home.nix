@@ -28,6 +28,9 @@
       rofi            # Alternativa a dmenu
       pavucontrol
       zoxide
+
+      #LSP
+      nil
       
       # Editors
       vscodium
