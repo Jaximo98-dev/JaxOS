@@ -5,7 +5,7 @@
     enable = true;
     settings = {
       window.decorations = "none";
-      window.opacity = 0.9;
+      window.opacity = 0.2;
       font = {
         size = 11;
         bold = {

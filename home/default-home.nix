@@ -23,6 +23,7 @@
       home-manager
       cowsay          # Para probar cosas
       tldr
+      thefuck
       btop            # Performance monitor
       brightnessctl   # Keyboad backlight for laptop
       rofi            # Alternativa a dmenu
