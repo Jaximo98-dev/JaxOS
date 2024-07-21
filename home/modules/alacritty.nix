@@ -6,6 +6,7 @@
     settings = {
       window.decorations = "none";
       window.opacity = 0.9;
+      /*
       font = {
         size = 11;
         bold = {
@@ -21,6 +22,7 @@
           style = "Medium";
         };
       };
+      */
     };
   };
 }
