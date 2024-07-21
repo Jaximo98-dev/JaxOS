@@ -21,6 +21,7 @@
     packages = with pkgs; [
       # Fundamentales/Cimientos
       home-manager
+      gnumake
       cowsay          # Para probar cosas
       tldr
       thefuck
