@@ -31,8 +31,10 @@
       pavucontrol
       zoxide
 
-      #LSP
+      #LSP and Compilares and Languages
       nil
+      clang
+      go
       
       # Editors
       vscodium
