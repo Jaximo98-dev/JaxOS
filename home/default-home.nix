@@ -31,6 +31,7 @@
       rofi            # Alternativa a dmenu
       pavucontrol
       zoxide
+      feh
 
       #LSP and Compilares and Languages
       nil
