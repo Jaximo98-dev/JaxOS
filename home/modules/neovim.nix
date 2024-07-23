@@ -13,7 +13,7 @@
     #extraLuaConfig = builtins.readFile(./nvim/init.lua);
 
     extraPackages = with pkgs; [
-      python
+      python3
 
       ripgrep
       fd
