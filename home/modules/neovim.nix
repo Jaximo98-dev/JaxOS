@@ -8,9 +8,19 @@
     vimAlias = true;
     vimdiffAlias = true;
 
-    plugins = [ pkgs.vimPlugins.nvim-treesitter.withAllGrammars ];
+    plugins = [ pkgs.vimPlugins.nvim-treesitter.withAllGrammars pkgs.vimPlugins.lua];
 
     #extraLuaConfig = builtins.readFile(./nvim/init.lua);
+
+    extraPackages = with pkgs; [
+      python
+
+      ripgrep
+      fd
+
+      stylua
+      lua51Packages.luarocks
+    ];
   };
 
 

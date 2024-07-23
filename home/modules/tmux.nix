@@ -7,7 +7,7 @@
     shell = "${pkgs.zsh}/bin/zsh";
     historyLimit = 100000;
     keyMode = "vi";
-    prefix = "C-a";
+    #prefix = "C-a";
     baseIndex = 1;
     sensibleOnTop = true;
     mouse = true;
