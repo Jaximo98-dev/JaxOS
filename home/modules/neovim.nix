@@ -15,6 +15,8 @@
     extraPackages = with pkgs; [
       python3
       lua
+      nodejs
+
 
       ripgrep
       fd

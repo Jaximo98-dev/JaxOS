@@ -18,6 +18,7 @@
       cdjml = "cd ~/JaxOS; make laptop";
       gpcdjmd = "cd ~/JaxOS; git pull; make desktop";
       gpcdjml = "cd ~/JaxOS; git pull; make laptop";
+      pa = "cd ~/Documentos/proyectos/abyssmmo";
     };
 
     # Oh my zsh!

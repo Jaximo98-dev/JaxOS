@@ -33,7 +33,7 @@ in
           {command = "firefox";}
           {command = "obsidian";}
           {command = "codium";}
-          #{command = "goland";}
+          {command = "goland";}
           {command = "i3-msg workspace 1";}
         ];
 
@@ -42,7 +42,7 @@ in
           "2" = [{ class = "^firefox$"; instance = "Navigator"; }];
           "3" = [{ class = "^obsidian$"; instance = "obsidian"; }];
           "4" = [{ class = "^VSCodium$"; instance = "vscodium"; }];
-          #"5" = [{ class = "^jetbrains-goland$"; instance = "jetbrains-goland"; }];
+          "5" = [{ class = "^jetbrains-goland$"; instance = "jetbrains-goland"; }];
           /*
           "1: console" = [ { class = "Alacritty"; } ];
           "2: web" = [ { class = "Firefox"; instance = "Firefox";} ];
