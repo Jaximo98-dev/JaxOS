@@ -11,13 +11,12 @@
 
     shellAliases = {
       ll = "ls -l";
-      update = "sudo nixos-rebuild switch";
       rof = "rofi -show drun; exit";
       cdj = "cd ~/JaxOS";
       cdjmd = "cd ~/JaxOS; make desktop";
       cdjml = "cd ~/JaxOS; make laptop";
-      gpcdjmd = "cd ~/JaxOS; git pull; make desktop";
-      gpcdjml = "cd ~/JaxOS; git pull; make laptop";
+      
+      pn = "cd ~/JaxOS/home/modules/nvim";
       pa = "cd ~/Documentos/proyectos/abyssmmo";
     };
 
