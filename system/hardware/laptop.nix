@@ -12,6 +12,7 @@
   boot.initrd.kernelModules = [ ];
   boot.kernelModules = [ "kvm-intel" ];
   boot.extraModulePackages = [ ];
+  services.xserver.videoDrivers = [ "modesetting" ];
 
   fileSystems."/" =
     { device = "/dev/disk/by-uuid/736680b5-8634-47c4-bbaf-8b15d05d2ec0";
