@@ -5,13 +5,16 @@
     enable = true;
 
     shell = "${pkgs.zsh}/bin/zsh";
-    terminal = "screen-256color";
+    terminal = "tmux-256color";
     historyLimit = 100000;
     keyMode = "vi";
     #prefix = "C-a";
     baseIndex = 1;
     sensibleOnTop = true;
     mouse = true;
+    extraConfig = ''
+    set-option -ga terminal-overrides ",xterm*:Tc"
+    '';
 
     # Sacado de https://gitlab.com/hmajid2301/dotfiles/-/blob/06bf4ad267beb6693b941ef51d880e4d0fc1df0a/home-manager/programs/multiplexers/tmux.nix
     plugins = with pkgs.tmuxPlugins; [
