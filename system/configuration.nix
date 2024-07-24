@@ -25,6 +25,8 @@
 
   # Composer
   services.picom.enable = true;
+  services.picom.vSync = true;
+  services.picom.shadow = false; 
 
   # Laptop performance profile
   services.tlp = {

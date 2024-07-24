@@ -18,10 +18,11 @@
   - [x] Alacritty configuration
   - [ ] Tmux configuration
   - [x] Polybar configuration
-  - [ ] Neovim configuration
+  - [X] Neovim configuration
   - [x] Firefox configuration
   - [ ] Spotify configuration
-  - [ ] Obsidian configuration with sync
+  - [X] Obsidian configuration with sync
+  - [ ] Remove arrows as movement, change capslock.
 
   ---
   sers.defaultUserShell = pkgs.zsh;
