@@ -6,7 +6,7 @@ in
 { # xrandr --output DP-3 --primary --mode 2560x1440 --rate 144 --output HDMI-1 -off --mode 1920x1080 --rate 60 --left-of DP-3 --rotate right
   xsession = {
     enable = true;
-    initExtra = if(device == "desktop") then "xrandr --output DP-3 --primary --mode 2560x1440 --rate 144 --output HDMI-1 --off --mode 1920x1080 --rate 60 --left-of DP-3 --rotate right" else "";
+    initExtra = if(device == "desktop") then "xrandr --output DP-3 --primary --mode 2560x1440 --rate 144 --output HDMI-1 --off" else "";
     windowManager.i3 = {
       enable = true;
       config = {
