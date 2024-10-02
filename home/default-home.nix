@@ -44,6 +44,7 @@
 
       # Apps
       obsidian
+      gnome.nautilus
       (discord.override {
         withOpenASAR = true;
       })
