@@ -41,7 +41,7 @@
       # Editors
       vscodium
       jetbrains.goland
-      zed
+      zeditor
 
       # Apps
       obsidian
