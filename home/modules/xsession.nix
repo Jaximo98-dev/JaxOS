@@ -27,7 +27,7 @@ in
       */
         startup = [
           {command = "systemctl --user restart polybar"; always = true; notification = false; }
-          {command = "feh --bg-scale ~/JaxOS/wallpapers/gruv-ghibli.png"; always = true; notification = false; }
+          {command = "feh --bg-fill --randomize ~/JaxOS/wallpapers/*"; always = true; notification = false; }
           
           {command = "alacritty -e zsh -c 'tmux has-session -t wololo 2>/dev/null && tmux attach -t wololo || tmux new-session -s wololo'";}
           {command = "firefox";}
