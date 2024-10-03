@@ -37,10 +37,13 @@
       nil
       clang
       go
+      jetbrains.jdk # Java modificado para usar sus IDEs mejor...
       
       # Editors
       vscodium
       jetbrains.goland
+      jetbrains.clion
+      jetbrains.idea-ultimate
 
       # Apps
       obsidian

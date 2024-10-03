@@ -29,12 +29,12 @@ in
           {command = "systemctl --user restart polybar"; always = true; notification = false; }
           {command = "feh --bg-fill --randomize ~/JaxOS/wallpapers/*"; always = true; notification = false; }
           
-          {command = "alacritty -e ~/start_tmux.sh"; notification = false;}
-          {command = "firefox";}
-          {command = "obsidian";}
-          {command = "codium";}
-          {command = "goland";}
-          {command = "i3-msg workspace 1";}
+          {command = "alacritty -e sh $HOME/start_tmux.sh"; notification = false;}
+          {command = "firefox"; notification = false;}
+          {command = "obsidian"; notification = false;}
+          {command = "codium"; notification = false;}
+          {command = "goland"; notification = false;}
+          {command = "i3-msg workspace 1"; notification = false;}
         ];
 
         assigns = {
