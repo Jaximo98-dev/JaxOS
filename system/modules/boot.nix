@@ -16,6 +16,10 @@
 		extraEntriesBeforeNixOS = true;
 		default = 21;
 	};
+
+  # Habilitar soporte para NTFS al arranque
+  boot.supportedFilesystems = [ "ntfs" ];
+
 	# Theming
 /* 	boot.loader.grub.theme = pkgs.stdenv.mkDerivation {
   	pname = "distro-grub-themes";

@@ -22,6 +22,8 @@
       # Fundamentales/Cimientos
       home-manager
       gnumake
+      ntfs3g
+
       tree
       cowsay          # Para probar cosas
       tldr

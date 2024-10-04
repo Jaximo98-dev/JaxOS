@@ -29,7 +29,7 @@ in
           {command = "systemctl --user restart polybar"; always = true; notification = false; }
           {command = "feh --bg-fill --randomize ~/JaxOS/wallpapers/*"; always = true; notification = false; }
           
-          {command = "sleep 1 && alacritty -e sh $HOME/start_tmux.sh";}
+          {command = "sleep 2 && alacritty -e sh $HOME/start_tmux.sh";}
           {command = "firefox"; notification = false;}
           {command = "obsidian"; notification = false;}
           {command = "codium"; notification = false;}
