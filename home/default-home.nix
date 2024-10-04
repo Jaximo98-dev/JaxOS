@@ -34,6 +34,7 @@
       pavucontrol
       zoxide
       feh
+      vlc
 
       #LSP and Compilares and Languages
       nil
