@@ -6,6 +6,7 @@
 
     ./modules/zsh.nix           # Shell interpreter
     ./modules/alacritty.nix     # Terminal emulator
+    ./modules/wezterm.nix
     ./modules/tmux.nix          # Session manager
 
     ./modules/neovim.nix        # code editor 1
@@ -22,7 +23,6 @@
       # Fundamentales/Cimientos
       home-manager
       gnumake
-      ntfs3g
 
       tree
       cowsay          # Para probar cosas
@@ -34,7 +34,6 @@
       pavucontrol
       zoxide
       feh
-      vlc
 
       #LSP and Compilares and Languages
       nil
@@ -49,6 +48,7 @@
       jetbrains.idea-ultimate
 
       # Apps
+      vlc
       obsidian
       gnome.nautilus
       (discord.override {
