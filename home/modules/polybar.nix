@@ -21,8 +21,8 @@
         height = "30";
 
         #TODO: Colorme
-        background = "#1d1f21";
-        foreground = "#707880";
+        background = "#282828";
+        foreground = "#EBDBB2";
         radius = 0;
         padding-left = 1;
         padding-right = 1;
@@ -84,7 +84,7 @@
         format-discharging = "<label-discharging>";
 
         label-charging = "Charging %percentage%%";
-        label-charging-foreground = "#1DB954";
+        label-charging-foreground = "#B8BB26";
         label-charging-padding = 1;
 
         label-discharging = "Discharging %percentage%%";
@@ -98,8 +98,8 @@
         type = "internal/i3";
         format = "<label-state> <label-mode>";
         label-focused = "%index%";
-        label-focused-foreground = "#1DB954";
-        label-focused-background = "#1d1f21";
+        label-focused-foreground = "#B8BB26";
+        label-focused-background = "#282828";
         label-focused-underline = "#fba922";
         label-focused-padding = 1;
         label-unfocused = "%index%";
@@ -109,7 +109,7 @@
         label-visible-padding = 1;
         label-urgent = "%index%";
         label-urgent-foreground = "#000000";
-        label-urgent-background = "#bd2c40";
+        label-urgent-background = "#98971A";
         label-urgent-padding = 1;
         
       };

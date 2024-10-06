@@ -13,7 +13,7 @@ in
 
         bars = [];
 
-        terminal = "alacritty";
+        terminal = "wezterm";
         window.titlebar = false;
         window.border = 0;
 
@@ -29,7 +29,7 @@ in
           {command = "systemctl --user restart polybar"; always = true; notification = false; }
           {command = "feh --bg-fill --randomize ~/JaxOS/wallpapers/*"; always = true; notification = false; }
           
-          {command = "sleep 2 && alacritty -e sh ~/start_tmux.sh";}
+          {command = "wezterm";}
           {command = "firefox"; notification = false;}
           {command = "obsidian"; notification = false;}
           {command = "codium"; notification = false;}
@@ -38,7 +38,7 @@ in
         ];
 
         assigns = {
-          "1" = [{ class = "^Alacritty$"; }];
+          "1" = [{ class = "^Wezterm$"; }];
           "2" = [{ class = "^firefox$"; instance = "Navigator"; }];
           "3" = [{ class = "^obsidian$"; instance = "obsidian"; }];
           "4" = [{ class = "^VSCodium$"; instance = "vscodium"; }];
