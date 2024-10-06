@@ -12,6 +12,7 @@
     ./modules/neovim.nix        # code editor 1
     ./modules/polybar.nix       # bar
     ./modules/git.nix           # git
+    ./modules/btop.nix          # Performance monitor
     ./modules/firefox.nix       # firefox
 
   ];
@@ -27,8 +28,7 @@
       tree
       cowsay          # Para probar cosas
       tldr
-      thefuck
-      btop            # Performance monitor
+      thefuck    
       brightnessctl   # Keyboad backlight for laptop
       rofi            # Alternativa a dmenu
       pavucontrol

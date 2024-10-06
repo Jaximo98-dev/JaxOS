@@ -307,7 +307,7 @@
       }
       {
         Title = "ChatGPT";
-        URL = "https://chat.openai.com/chat";
+        URL = "https://chatgpt.com/";
       }
       {
         Title = "WhatsApp Web";
@@ -320,7 +320,7 @@
       }
       {
         Title = "Github";
-        URL = "https://github.com/users/Jaximo98-dev/";
+        URL = "https://github.com/Jaximo98-dev/";
       }
     ];
   };

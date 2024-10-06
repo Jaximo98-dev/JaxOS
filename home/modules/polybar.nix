@@ -13,7 +13,7 @@
     settings = {
 
       "bar/bar" = {
-        font-0 = "JetBrains Mono Nerd Font:size=10;2.25";
+        font-0 = "JetBrains Mono Nerd Font:weight=bold:size=10;2.25";
         scroll-up = "#i3.prev";
         scroll-down = "#i3.next";
         fixed-center = true;
@@ -117,8 +117,8 @@
       #TODO: Add volume module
       "module/volume" = {
         type = "internal/pulseaudio";
-        format.volume = "Vol <label-volume>";
-        label.muted.text = "0";
+        format.volume = " Vol <label-volume>";
+        label.muted.text = "Vol Muted";
         label.muted.foreground = "#666";
         ramp.volume = ["." "o" "O"];
         click.right = "pavucontrol &";
@@ -128,6 +128,8 @@
         type = "internal/date";
         interval = 1.0;
         date = "%A, %d %B %H:%M";
+        #FIXME: Possibly not working because it's not double quotes all around but... And the i3 action to switch to that window is also missing
+        click-left = "xdg-open 'obsidian://adv-uri?vault=Estudios&commandid=app%3Atoggle-right-sidebar' && xdg-open 'obsidian://adv-uri?vault=Estudios&filepath=05%20-%20Estudios%2FCalendario.md&commandid=obsidian-full-calendar%3Afull-calendar-open'";
       };
 
       #TODO: Finish this module https://github.com/polybar/polybar/wiki/Module:-backlight

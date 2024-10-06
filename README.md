@@ -24,6 +24,9 @@
   - [X] Obsidian configuration with sync
   - [ ] Remove arrows as movement, change capslock.
 
+
+  - [ ] Safe check if the files are on $HOME/JaxOS
+  - [ ] 
   ---
   sers.defaultUserShell = pkgs.zsh;
   programs.zsh.enable = true;
