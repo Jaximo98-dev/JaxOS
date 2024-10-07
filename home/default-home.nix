@@ -44,7 +44,7 @@
       # Editors
       vscodium
       jetbrains.goland
-      jetbrains.clion
+      #jetbrains.clion
       jetbrains.idea-ultimate
 
       # Apps
