@@ -33,7 +33,7 @@ in
           {command = "firefox"; notification = false;}
           {command = "obsidian"; notification = false;}
           {command = "codium"; notification = false;}
-          {command = "goland"; notification = false;}
+          #{command = "goland"; notification = false;}
           {command = "i3-msg workspace 1"; notification = false;}
         ];
 
