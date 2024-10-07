@@ -27,7 +27,7 @@
         padding-left = 1;
         padding-right = 1;
 
-        separator = "|";
+        separator = " | ";
 
         module-margin = 0;
         modules-left = "i3";
@@ -118,7 +118,7 @@
       "module/volume" = {
         type = "internal/pulseaudio";
         format.volume = " Vol <label-volume>";
-        label.muted.text = "Vol Muted";
+        label.muted.text = " Vol Muted";
         label.muted.foreground = "#666";
         ramp.volume = ["." "o" "O"];
         click.right = "pavucontrol &";
