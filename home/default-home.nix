@@ -37,7 +37,6 @@
 
       #LSP and Compilares and Languages
       nil
-      gcc
       clang
       go
       jetbrains.jdk # Java modificado para usar sus IDEs mejor...
