@@ -128,9 +128,10 @@
         type = "internal/date";
         interval = 1.0;
         date = "%A, %d %B %H:%M";
-        #FIXME: Possibly not working because it's not double quotes all around but... And the i3 action to switch to that window is also missing
-        click-left = "xdg-open 'obsidian://adv-uri?vault=Estudios&commandid=app%3Atoggle-right-sidebar' && xdg-open 'obsidian://adv-uri?vault=Estudios&filepath=05%20-%20Estudios%2FCalendario.md&commandid=obsidian-full-calendar%3Afull-calendar-open'";
+        exec = "~/JaxOS/scripts/polybar_obsidian_calendar.sh";
+        click-left = "~/JaxOS/scripts/polybar_obsidian_calendar.sh";
       };
+
 
       #TODO: Finish this module https://github.com/polybar/polybar/wiki/Module:-backlight
       "module/backlight" = {

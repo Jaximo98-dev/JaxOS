@@ -43,6 +43,7 @@ in
           "3" = [{ class = "^obsidian$"; instance = "obsidian"; }];
           "4" = [{ class = "^VSCodium$"; instance = "vscodium"; }];
           "5" = [{ class = "^jetbrains-goland$"; instance = "jetbrains-goland"; }];
+          "9" = [{ class = "^vesktop$";}];
           /*
           "1: console" = [ { class = "Alacritty"; } ];
           "2: web" = [ { class = "Firefox"; instance = "Firefox";} ];
