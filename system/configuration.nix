@@ -7,7 +7,7 @@
       ./modules/localization.nix
       ./modules/devices.nix
       ./modules/boot.nix
-      ./module/network.nix
+      ./modules/network.nix
     ];
 
   # Define a user account.
