@@ -1,4 +1,4 @@
-{ config, pkgs, ...}:
+{ config, pkgs, device, ...}:
 
 {
   programs.zsh = {
@@ -13,11 +13,12 @@
       ll = "ls -l";
       rof = "rofi -show drun; exit";
       cdj = "cd ~/JaxOS";
-      cdjmd = "cd ~/JaxOS; make desktop";
-      cdjml = "cd ~/JaxOS; make laptop";
+      cdjmd = if(device == "desktop") then "cd ~/JaxOS; make desktop" else "echo Este es el portatil, zopenco.";
+      cdjml = if(device == "laptop") then "cd ~/JaxOS; make laptop" else "echo Este es el sobremesa, tifon.";
       
       pn = "cd ~/JaxOS/home/modules/nvim";
       pa = "cd ~/Documentos/proyectos/abyssmmo";
+      eduroam = if(device == "desktop") then "echo This is the desktop configuration, no eduroam expected..." else "sh ~/JaxOS/scripts/eduroam_connect.sh";
     };
 
     # Oh my zsh!
