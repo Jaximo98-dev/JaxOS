@@ -37,7 +37,7 @@
         fade_out_duration_ms = 75,
         target = 'CursorColor',
       }
-      config.color = {
+      config.colors = {
         visual_bell = '#83A598',
       }
 
