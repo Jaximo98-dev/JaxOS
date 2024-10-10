@@ -26,9 +26,9 @@
       gnumake
 
       tree
-      cowsay          # Para probar cosas
       tealdeer
-      thefuck    
+      thefuck
+      ncdu
       brightnessctl   # Keyboad backlight for laptop
       rofi            # Alternativa a dmenu
       pavucontrol
