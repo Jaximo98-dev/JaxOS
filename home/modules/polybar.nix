@@ -32,7 +32,7 @@
         module-margin = 0;
         modules-left = "i3";
         modules-center = "date";
-        modules-right = if(device == "laptop") then "network-wire network-wireless cpu memory battery volume" else "cpu memory volume";
+        modules-right = if(device == "laptop") then "network-wire network-wireless cpu memory battery volume" else "network-wire cpu memory volume";
       };
 
       "module/memory" = {
@@ -59,7 +59,7 @@
         interval = 3;
         interface = "wlo1";
         accumulative-stats = true;
-        label-connected = "Net %downspeed:8%";
+        label-connected = "%{A1:nmtui}Net %downspeed:8%%{A1}";
         label-disconnected = "Net Disconnected";
         format-connected = "<label-connected>";
         format-disconnected = "<label-disconnected>";
@@ -93,7 +93,6 @@
         label-full-padding = 1;
       };
 
-      #TODO: Colorme
       "module/i3" = {
         type = "internal/i3";
         format = "<label-state> <label-mode>";
@@ -114,22 +113,19 @@
         
       };
 
-      #TODO: Add volume module
       "module/volume" = {
         type = "internal/pulseaudio";
-        format.volume = " Vol <label-volume>";
-        label.muted.text = " Vol Muted";
-        label.muted.foreground = "#666";
-        ramp.volume = ["." "o" "O"];
-        click.right = "pavucontrol &";
+        format-volume = " Vol <label-volume>";
+        label-muted-text = " Vol Muted";
+        label-muted-foreground = "#555555";
+        click-right = "pavucontrol &";
       };
 
       "module/date" = {
         type = "internal/date";
         interval = 1.0;
         date = "%A, %d %B %H:%M";
-        exec = "~/JaxOS/scripts/polybar_obsidian_calendar.sh";
-        click-left = "~/JaxOS/scripts/polybar_obsidian_calendar.sh";
+        label= "%{A1:sh ~/JaxOS/scripts/polybar_obsidian_calendar.sh:} %date% %{A}";
       };
 
 

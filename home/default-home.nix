@@ -5,9 +5,9 @@
     ./modules/xsession.nix      # Initial xsession
 
     ./modules/zsh.nix           # Shell interpreter
-    ./modules/alacritty.nix     # Terminal emulator
+    #ARCHIVED: ./modules/alacritty.nix     # Terminal emulator
     ./modules/wezterm.nix
-    ./modules/tmux.nix          # Session manager
+    #ARCHIVED: ./modules/tmux.nix          # Session manager
 
     ./modules/neovim.nix        # code editor 1
     ./modules/polybar.nix       # bar

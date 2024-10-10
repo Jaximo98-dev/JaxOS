@@ -1,6 +1,6 @@
   
   # JaxOS
-  This repository contains my full NixOS setup. Heavily inspired in the philosophy of reducing the amount of mental gimmicks to get to places and doing so with the most comfortable and joyful experience. I shall rice this shit to the brim, simplicity and function over form.
+  This repository contains my full NixOS setup. Heavily inspired in the philosophy of reducing the amount of mental gimmicks to get to places and doing so with the most comfortable and joyful experience. I shall rice this shit to the brim, simplicity and function over form, but how would an artist paint without beauty around him.
   
   ## Installation
   1. Get an instance of NixOS ISO running, and install the whatever template.
@@ -9,19 +9,19 @@
   4. Run `make desktop` or `make laptop`
 
   ## Todo
-  - [ ] Add one generic profile, that does not use preset hardware configuration files.
+  - [X] Add one generic profile, that does not use preset hardware configuration files.
   - [ ] Fingerprint for laptop
+  - [ ] Change lockscreen
   - [ ] Secrets
   - [ ] Multi monitor fix
   - [ ] Rice using nix-style
 
-  - [x] Alacritty configuration
-  - [ ] Tmux configuration
   - [x] Polybar configuration
-  - [X] Neovim configuration
+  - [ ] Neovim configuration (paused until i )
   - [x] Firefox configuration
   - [ ] Spotify configuration
   - [X] Obsidian configuration with sync
+  - [ ] Eduroam for laptop...
   - [ ] Remove arrows as movement, change capslock.
 
 
@@ -41,3 +41,9 @@
 
 
   xrandr --output DP-3 --mode 2560x1440 --rate 144
+---
+considerations:
+dunst
+brillo
+nom
+udiskie

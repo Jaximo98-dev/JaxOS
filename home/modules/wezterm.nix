@@ -33,11 +33,12 @@
       config.window_background_opacity = 0.9
 
       config.visual_bell = {
-        fade_in_function = 'EaseIn',
-        fade_in_duration_ms = 50,
-        fade_out_function = 'EaseOut',
-        fade_out_duration_ms = 50,
-        target = 'BackgroundColor',
+        fade_in_duration_ms = 75,
+        fade_out_duration_ms = 75,
+        target = 'CursorColor',
+      }
+      config.color = {
+        visual_bell = '#83A598',
       }
 
       config.animation_fps = 144
