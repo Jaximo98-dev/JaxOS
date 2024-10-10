@@ -40,6 +40,7 @@
       clang
       go
       jetbrains.jdk # Java modificado para usar sus IDEs mejor...
+      maven
       
       # Editors
       vscodium
