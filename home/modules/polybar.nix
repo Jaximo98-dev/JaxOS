@@ -58,7 +58,7 @@
         interval = 3;
         interface = "wlo1";
         accumulative-stats = true;
-        label-connected = "%{A1:nmtui}Net %downspeed:8%%{A1}";
+        label-connected = "Net %downspeed:8%";
         label-disconnected = "Net Disconnected";
         format-connected = "<label-connected>";
         format-disconnected = "<label-disconnected>";
