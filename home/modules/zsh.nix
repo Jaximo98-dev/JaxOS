@@ -18,7 +18,10 @@
       
       pn = "cd ~/JaxOS/home/modules/nvim";
       pa = "cd ~/Documentos/proyectos/abyssmmo";
+
+      # Custom functions
       eduroam = if(device == "desktop") then "echo This is the desktop configuration, no eduroam expected..." else "sh ~/JaxOS/scripts/eduroam_connect.sh";
+      tiempo = "curl https://wttr.in/Malaga";
     };
 
     # Oh my zsh!

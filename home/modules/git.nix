@@ -1,6 +1,7 @@
 { config, pkgs, ...}:
 
 {
+  programs.lazygit.enable = true;
   programs.git = {
     enable = true;
     userName  = "Jaximo98-dev";

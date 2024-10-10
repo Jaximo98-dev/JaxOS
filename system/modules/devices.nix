@@ -8,8 +8,5 @@
   nixpkgs.config.pulseaudio = true;
   hardware.enableAllFirmware = true;
   hardware.pulseaudio.enable = true;
-
-
-
-  # pkgs.brightnessctl is in charge of keyboard backlight for laptop, check in home.
+  
 }

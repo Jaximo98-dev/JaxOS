@@ -20,7 +20,6 @@
         width = "100%";
         height = "30";
 
-        #TODO: Colorme
         background = "#282828";
         foreground = "#EBDBB2";
         radius = 0;
