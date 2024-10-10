@@ -27,7 +27,7 @@
 
       tree
       cowsay          # Para probar cosas
-      tldr
+      tealdeer
       thefuck    
       brightnessctl   # Keyboad backlight for laptop
       rofi            # Alternativa a dmenu
