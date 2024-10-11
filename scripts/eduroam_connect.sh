@@ -15,6 +15,7 @@ sudo nmcli radio wifi on
 sudo wpa_supplicant -i $INTERFACE -c $WPA_CONF -B
 
 # NetworkManager does this, but just in case here it is.
-# sudo dhclient $INTERFACE
+#sudo dhclient $INTERFACE
+
 
 echo "Connected to Eduroam!"
