@@ -47,6 +47,13 @@
       config.unix_domains = {{ name = 'unix', }}
       config.default_gui_startup_args = { 'connect', 'unix' }
 
+      config.skip_close_confirmation_for_processes_named = {
+        'bash',
+        'sh',
+        'zsh',
+      }
+
+
       -- Conditional configuration based on the device type
       if "${device}" == "laptop" then
         config.animation_fps = 60
