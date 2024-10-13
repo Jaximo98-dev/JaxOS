@@ -33,6 +33,7 @@
       brightnessctl   # Keyboad backlight for laptop
       rofi            # Alternativa a dmenu
       pavucontrol
+      dunst
       
       feh
 
@@ -42,6 +43,7 @@
       go
       jetbrains.jdk # Java modificado para usar sus IDEs mejor...
       maven
+      python3
       
       # Editors
       vscodium

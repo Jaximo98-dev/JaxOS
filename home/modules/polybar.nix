@@ -31,7 +31,7 @@
         module-margin = 0;
         modules-left = "i3";
         modules-center = "date";
-        modules-right = if(device == "laptop") then "network-wire network-wireless cpu memory battery volume" else "network-wire cpu memory volume";
+        modules-right = if(device == "laptop") then "mail network-wire network-wireless cpu memory battery volume" else "mail network-wire cpu memory volume";
       };
 
       "module/memory" = {
@@ -136,6 +136,14 @@
         label = "Brightness %percentage%%";
         label-padding = 1;
       };
+
+    "module/mail" = {
+      type = "custom/script";
+      exec = "~/JaxOS/scripts/imap_polybar.py";
+      interval = 30;
+      label = " %output%";
+      click-left = "exec firefox mail.google.com/mail/u/1 &";
+    };
 
     };
   };
