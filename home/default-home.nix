@@ -5,6 +5,7 @@
     ./modules/xsession.nix      # Initial xsession
 
     ./modules/zsh.nix           # Shell interpreter
+    ./modules/zoxide.nix
     #ARCHIVED: ./modules/alacritty.nix     # Terminal emulator
     ./modules/wezterm.nix
     #ARCHIVED: ./modules/tmux.nix          # Session manager
@@ -32,7 +33,7 @@
       brightnessctl   # Keyboad backlight for laptop
       rofi            # Alternativa a dmenu
       pavucontrol
-      zoxide
+      
       feh
 
       #LSP and Compilares and Languages
