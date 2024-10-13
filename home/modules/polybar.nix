@@ -8,7 +8,11 @@
       pulseSupport = true;
     };
   
-    script = "polybar bar &";
+    script = ''
+      for m in $(polybar --list-monitors | ${pkgs.coreutils}/bin/cut -d":" -f1); do
+        MONITOR=$m polybar bar &
+      done
+    '';
 
     settings = {
 
