@@ -20,7 +20,7 @@
       pa = "cd ~/Documentos/proyectos/abyssmmo";
 
       # Custom functions
-      eduroam = if(device == "desktop") then "echo This is the desktop configuration, no eduroam expected..." else "sh ~/JaxOS/scripts/eduroam_connect.sh";
+      fondo = "feh --bg-fill --randomize ~/JaxOS/wallpapers/*";
       tiempo = "curl https://wttr.in/Malaga";
       weather = "curl https://wttr.in/Malaga";
     };
