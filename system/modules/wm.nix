@@ -21,7 +21,7 @@
                 show-password-label = true
 
                 # The text of the password input's label.
-                password-label-text = Password:
+                password-label-text = password:
 
                 # The text shown when an invalid password is entered. May be blank.
                 invalid-password-text = Invalid Password
@@ -84,7 +84,7 @@
                 # An absolute path to an optional background image.
                 # Note: The file should be somewhere that LightDM has permissions to read
                 #       (e.g., /etc/lightdm/).
-                background-image = "$HOME/JaxOS/wallpapers/gruv-painting.jpg"
+                background-image = "/home/jaximo/JaxOS/wallpapers/gruv-painting.jpg"
 
                 # Background image size:
                 # auto: unscaled
