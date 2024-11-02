@@ -31,6 +31,7 @@
       thefuck
       ncdu
       brightnessctl   # Keyboad backlight for laptop
+      autorandr
       rofi            # Alternativa a dmenu
       pavucontrol
       dunst

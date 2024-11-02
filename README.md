@@ -28,7 +28,7 @@
   - [ ] Detectar y configurar cualquier pantalla enchufada antes o durante el uso.
   - [ ] Popular cada pantalla con su polybar. (Posible idea: cambiar color de acento)
   - [ ] Establecer reglas para i3 en un entorno multi-monitor. Asignando en monitor 1,2,3 las propiedades de principal, secundario, terciario.
-  - [ ] Cambiar el greeter de lighdm, a mini y cambiar fondo de pantalla. (Posible idea: estudiar el auth manager para poder usar fingerprint)
+  - [X] Cambiar el greeter de lighdm, a mini y cambiar fondo de pantalla. (Posible idea: estudiar el auth manager para poder usar fingerprint)
   - [ ] Configurar los keybinginds de i3, wezterm, firefox y vscode para amueblarse a vim (Posible idea: propagar configuración a nvim)
   - [ ] Configurar los secretos, en concreto clave de SSH para wezterm y clave de github.
 

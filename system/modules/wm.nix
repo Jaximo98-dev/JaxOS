@@ -79,7 +79,7 @@
                 text-color = "#080800"
 
                 # The color of the error text
-                error-color = "#cc241d"
+                error-color = "#98971A"
 
                 # An absolute path to an optional background image.
                 # Note: The file should be somewhere that LightDM has permissions to read

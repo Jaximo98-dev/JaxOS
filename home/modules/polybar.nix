@@ -9,14 +9,18 @@
     };
   
     script = ''
-      for m in $(polybar --list-monitors | ${pkgs.coreutils}/bin/cut -d":" -f1); do
-        MONITOR=$m polybar bar &
-      done
+      polybar --list-monitors | while IFS=$'\n' read line; do
+      monitor=$(echo $line | ${pkgs.coreutils}/bin/cut -d':' -f1)
+      primary=$(echo $line | ${pkgs.coreutils}/bin/cut -d' ' -f3)
+      tray_position=$([ -n "$primary" ] && echo "right" || echo "none")
+      MONITOR=$monitor TRAY_POSITION=$tray_position polybar --reload bar &
+    done
     '';
 
     settings = {
 
       "bar/bar" = {
+
         font-0 = "JetBrains Mono Nerd Font:weight=bold:size=10;2.25";
         scroll-up = "#i3.prev";
         scroll-down = "#i3.next";
