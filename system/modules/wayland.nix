@@ -186,19 +186,21 @@
 
   environment.sessionVariables.NIXOS_OZONE_WL = "1"; # Wayland fix for electron apps.
 
-
+  #         
   services.greetd = {
     enable = true;
     settings = {
+
      default_session = {
       command = ''
       ${pkgs.greetd.tuigreet}/bin/tuigreet \
         --time \
+        -- remember \
+        --remember-session \
         --asterisks \
-        --theme border=gray;text=darkgray;prompt=green;time=gray;action=lightgreen;button=gray;container=darkgray;input=white \
+        --theme 'border=gray;text=darkgray;prompt=green;time=gray;action=lightgreen;button=gray;container=darkgray;input=white' \
         --cmd hyprland
       '';
-      user = "jaximo";
      };
 
     };
