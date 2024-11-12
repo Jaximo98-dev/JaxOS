@@ -195,7 +195,7 @@
       ${pkgs.greetd.tuigreet}/bin/tuigreet \
         --time \
         --asterisks \
-        --user-menu \
+        --theme border=gray;text=darkgray;prompt=green;time=gray;action=lightgreen;button=gray;container=darkgray;input=white \
         --cmd hyprland
       '';
       user = "jaximo";
