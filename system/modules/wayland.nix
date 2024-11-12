@@ -1,15 +1,17 @@
 #
-# Window manager using i3.
-#
+# Configuration of the display server, Wayland. ANd the Display Manager alike.
+# DOCS: https://www.drakerossman.com/blog/wayland-on-nixos-confusion-conquest-triumph https://www.youtube.com/watch?v=61wGzIv12Ds
 { config, pkgs, lib, device, ... }:
 {
-  # unknown
+  #  --- x11 - i3 - lightdm --- 
+  /*
+  # Xsession.nix & polybar.nix archived.
   environment.pathsToLink = ["/libexec"];
-
-  # i3 configuration, uses i3lock
   services.xserver = {
-    enable = true;
-    displayManager.lightdm.greeters.mini = {
+    enable = false;
+    displayManager.lightdm = {
+      enable = false;
+      greeters.mini = {
             enable = true;
             user = "jaximo";
             extraConfig = ''
@@ -149,18 +151,60 @@
                 sys-info-margin = -5px -5px -5px
             '';
         };
+      };
     windowManager.i3 = {
-      enable = true;
-      extraPackages = with pkgs; [ i3lock ];
+      enable = false;
+    };
+    # Graphics fix?
+    videoDrivers = lib.mkIf (device == "laptop") [ "modesetting" ];
+    defaultSession = "none+i3";
+  };
+
+  # Composer
+  services.picom.enable = true;
+  services.picom.vSync = true;
+  services.picom.shadow = false; 
+  */
+
+  #  --- WAYLAND - HYPRLAND --- 
+  hardware.opengl.enable = true; # Para que no de errores wayland
+  security.polkit.enable = true; # Para permisos granulados entre procesos no priv to priv
+
+  environment.systemPackages = with pkgs; [
+    # Bare requirements
+    hyprland # Compositor
+    xwayland # Run X11 apps in Wayland
+
+
+    # Nice stuff
+    mako # Notifications
+    libnotify # mako dependency
+
+    waybar
+  ];
+
+  environment.sessionVariables.NIXOS_OZONE_WL = "1"; # Wayland fix for electron apps.
+
+
+  services.greetd = {
+    enable = true;
+    settings = {
+     default_session.command = ''
+      ${pkgs.greetd.tuigreet}/bin/tuigreet \
+        --time \
+        --asterisks \
+        --user-menu \
+        --cmd hyprland
+    '';
     };
   };
 
-  # Graphics fix?
-  services.xserver.videoDrivers = lib.mkIf (device == "laptop") [ "modesetting" ];
+  # Las opciones en la barra de seleccion
+  environment.etc."greetd/environments".text = ''
+    hyprland
+  '';
 
-
-  # Default session
-  services.displayManager.defaultSession = "none+i3";
-
-
+  # Permisos
+  xdg.portal.enable = true;
+  xdg.portal.extraPortals = [ pkgs.xdg-desktop-portal-gnome ];
 }

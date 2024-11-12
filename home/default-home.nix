@@ -2,7 +2,7 @@
 
   imports = 
   [
-    ./modules/xsession.nix      # Initial xsession
+    #ARCHIVED: ./modules/xsession.nix      # Initial xsession
 
     ./modules/zsh.nix           # Shell interpreter
     ./modules/zoxide.nix
@@ -10,8 +10,8 @@
     ./modules/wezterm.nix
     #ARCHIVED: ./modules/tmux.nix          # Session manager
 
-    ./modules/neovim.nix        # code editor 1
-    ./modules/polybar.nix       # bar
+    #./modules/neovim.nix        # code editor 1
+    #ARCHIVED: ./modules/polybar.nix       # bar
     ./modules/git.nix           # git
     ./modules/btop.nix          # Performance monitor
     ./modules/firefox.nix       # firefox
@@ -31,12 +31,9 @@
       thefuck
       ncdu
       brightnessctl   # Keyboad backlight for laptop
-      autorandr
-      rofi            # Alternativa a dmenu
+      rofi-wayland            # Alternativa a dmenu
       pavucontrol
-      dunst
       
-      feh
 
       #LSP and Compilares and Languages
       nil

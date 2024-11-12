@@ -3,7 +3,7 @@
 {
   imports =
     [ 
-      ./modules/wm.nix
+      ./modules/wayland.nix
       ./modules/localization.nix
       ./modules/devices.nix
       ./modules/boot.nix
@@ -18,16 +18,13 @@
   };
 
   # High attributes needed
-  environment.systemPackages = with pkgs; [];
+  environment.systemPackages = with pkgs; [
+    networkmanagerapplet
+  ];
 
   # Set zsh as main shell. (Needs to be defined in this level)
   programs.zsh.enable = true;
   users.defaultUserShell = pkgs.zsh;
-
-  # Composer
-  services.picom.enable = true;
-  services.picom.vSync = true;
-  services.picom.shadow = false; 
 
   # Laptop performance profile
   services.tlp = {
