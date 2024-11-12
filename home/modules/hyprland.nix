@@ -1,9 +1,24 @@
+{device, ...}:
 {
   wayland.windowManager.hyprland = {
     enable = true;
     xwayland.enable = true;
 
     settings = {
+
+      #monitor = name, resolution, position, scale
+      #monitor = DP-1, 1920x1080@144, 0x0, 1
+      # https://wiki.hyprland.org/Configuring/Monitors/
+      monitor = if device == "laptop" then [
+        ",preferred,auto,auto"
+        ",preferred,auto-up,auto"
+      ] else [
+        ",preferred,auto,auto"
+        ",preferred,auto-left,auto"
+      ];
+
+
+
       /*general = {
         gaps_in = 2;
         gaps_out = 3;
