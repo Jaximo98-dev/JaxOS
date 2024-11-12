@@ -9,8 +9,6 @@
         gaps_out = 3;
       };*/
 
-      terminal = "wezterm";
-
       misc = {
         disable_hyprland_logo = true;
       };
@@ -32,7 +30,7 @@
       "$mod" = "SUPER";
 
       bind = [
-        "$mod, Q, exec, wezterm"
+        "$mod, RETURN, exec, wezterm"
         "$mod, F, exec, firefox"
         "$mod, D, exec, discord"
         "$mod, R, exec, rofi"

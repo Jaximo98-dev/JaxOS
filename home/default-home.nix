@@ -3,6 +3,7 @@
   imports = 
   [
     #ARCHIVED: ./modules/xsession.nix      # Initial xsession
+    ./modules/hyprland.nix
 
     ./modules/zsh.nix           # Shell interpreter
     ./modules/zoxide.nix
@@ -33,6 +34,8 @@
       brightnessctl   # Keyboad backlight for laptop
       rofi-wayland            # Alternativa a dmenu
       pavucontrol
+
+      kitty
       
 
       #LSP and Compilares and Languages
