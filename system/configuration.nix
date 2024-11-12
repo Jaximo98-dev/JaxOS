@@ -18,15 +18,11 @@
   };
 
   # High attributes needed
-  environment.systemPackages = with pkgs; [
-  ];
+  environment.systemPackages = with pkgs; [];
 
   # Set zsh as main shell. (Needs to be defined in this level)
   programs.zsh.enable = true;
   users.defaultUserShell = pkgs.zsh;
-
-  # Fan control
-  programs.coolercontrol.enable = if(device == "laptop") then true else false;
 
   # Composer
   services.picom.enable = true;
