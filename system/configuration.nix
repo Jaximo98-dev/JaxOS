@@ -47,6 +47,9 @@
 
       };
   };
+  
+  # USB Automounting
+  services.gvfs.enable = true;
 
   # Fonts
   fonts.packages = with pkgs; [

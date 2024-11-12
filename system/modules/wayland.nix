@@ -174,6 +174,7 @@
     # Bare requirements
     hyprland # Compositor
     xwayland # Run X11 apps in Wayland
+    greetd.tuigreet
 
 
     # Nice stuff
@@ -189,13 +190,17 @@
   services.greetd = {
     enable = true;
     settings = {
-     default_session.command = ''
+     default_session = {
+      command = ''
       ${pkgs.greetd.tuigreet}/bin/tuigreet \
         --time \
         --asterisks \
         --user-menu \
         --cmd hyprland
-    '';
+      '';
+      user = "jaximo";
+     };
+
     };
   };
 
