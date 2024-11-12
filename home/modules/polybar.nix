@@ -9,18 +9,18 @@
     };
   
     script = ''
-      ${pkgs.xorg.xrandr}/bin/xrandr --query | grep " connected" | while IFS=$'\n' read -r line; do
-        monitor=$(echo "$line" | ${pkgs.coreutils}/bin/cut -d' ' -f1)
-        primary=$(echo "$line" | ${pkgs.coreutils}/bin/grep -o 'primary')
-        tray_position=$([ -n "$primary" ] && echo "right" || echo "none")
-        MONITOR=$monitor TRAY_POSITION=$tray_position polybar --reload bar &
-      done
+      #!/bin/sh
+        killall -q polybar
+        while pgrep -u $UID -x polybar >/dev/null; do sleep 1; done
+        for m in $(xrandr --query | grep " connected" | cut -d" " -f1); do
+          MONITOR=$m polybar --reload mybar &
+        done
     '';
 
     settings = {
 
       "bar/bar" = {
-        monitor = "${"env:MONITOR:"}";
+        monitor = "\${env:MONITOR}";
         font-0 = "JetBrains Mono Nerd Font:weight=bold:size=10;2.25";
         scroll-up = "#i3.prev";
         scroll-down = "#i3.next";
