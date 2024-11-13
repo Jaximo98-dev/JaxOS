@@ -10,10 +10,10 @@
       #monitor = DP-1, 1920x1080@144, 0x0, 1
       # https://wiki.hyprland.org/Configuring/Monitors/
       monitor = if device == "laptop" then [
-        ",preferred,auto,auto"
+        ",preferred,auto,1"
         ",preferred,auto-up,auto"
       ] else [
-        ",preferred,auto,auto"
+        ",preferred,auto,1"
         ",preferred,auto-left,auto"
       ];
 
@@ -24,8 +24,13 @@
         gaps_out = 3;
       };*/
 
+      xwayland = {
+          force_zero_scaling = true;
+        };
+
       misc = {
         disable_hyprland_logo = true;
+        disable_splash_rendering = true;
       };
 
       /*
@@ -35,12 +40,13 @@
 
       animations = {
         enabled = false;
+      };*/
+
+      input = {
+        kb_layout = "es";
+        kb_variant = "qwerty";
+        #kb_options = "ctrl:nocaps";
       };
-
-      input = {};
-
-        kb_options = "ctrl:nocaps";
-      }; */
 
       "$mod" = "SUPER";
 

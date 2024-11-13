@@ -16,6 +16,8 @@
         config = wezterm.config_builder()
       end
 
+      config.enable_wayland = true
+
       -- Base config shared across all devices
       config.scrollback_lines = 10000
       config.enable_tab_bar = true

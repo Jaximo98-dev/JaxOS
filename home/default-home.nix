@@ -36,7 +36,7 @@
       pavucontrol
 
       kitty
-      
+      foot
 
       #LSP and Compilares and Languages
       nil
