@@ -191,20 +191,35 @@
     enable = true;
     settings = {
 
+      #        --user-menu \
      default_session = {
       command = ''
       ${pkgs.greetd.tuigreet}/bin/tuigreet \
         --time \
-        -- remember \
+        --remember \
         --remember-session \
         --asterisks \
-        --theme 'border=gray;text=darkgray;prompt=green;time=gray;action=lightgreen;button=gray;container=darkgray;input=white' \
+        --sessions "${pkgs.hyprland-patched}/share/wayland-sessions" \
+        --theme "border=gray;text=darkgray;prompt=green;time=gray;action=lightgreen;button=gray;container=darkgray;input=white" \
         --cmd hyprland
       '';
      };
+     user = "jaximo";
 
     };
   };
+
+  systemd.services.greetd.serviceConfig = {
+    Type = "idle";
+    StandardInput = "tty";
+    StandardOutput = "tty";
+    StandardError = "journal"; # Without this errors will spam on screen
+    # Without these bootlogs will spam on screen
+    TTYReset = true;
+    TTYVHangup = true;
+    TTYVTDisallocate = true;
+  };
+
 
   # Las opciones en la barra de seleccion
   environment.etc."greetd/environments".text = ''
