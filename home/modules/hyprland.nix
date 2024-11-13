@@ -47,8 +47,8 @@
       bind = [
         "$mod, RETURN, exec, wezterm"
         "$mod, F, exec, firefox"
-        "$mod, D, exec, discord"
-        "$mod, R, exec, rofi"
+        "$mod, D, exec, vesktop"
+        "$mod, R, exec, rofi -show drun"
 
         "$mod, W, killactive"
 
