@@ -200,7 +200,7 @@
         --remember-session \
         --asterisks \
         --sessions "${pkgs.hyprland}/share/wayland-sessions" \
-        --theme "border=gray;text=darkgray;prompt=green;time=gray;action=lightgreen;button=gray;container=darkgray;input=white" \
+        --theme "border=gray;text=darkgray;prompt=lightgreen;time=gray;action=lightgreen;button=gray;container=darkgray;input=white" \
         --cmd hyprland
       '';
      };

@@ -10,7 +10,7 @@
       #monitor = DP-1, 1920x1080@144, 0x0, 1
       # https://wiki.hyprland.org/Configuring/Monitors/
       monitor = if device == "laptop" then [
-        ",preferred,auto,1"
+        "eDPI-1,preferred,auto,1"
         ",preferred,auto-up,auto"
       ] else [
         ",preferred,auto,1"
@@ -44,14 +44,14 @@
 
       input = {
         kb_layout = "es";
-        kb_variant = "qwerty";
+        #kb_variant = "qwerty";
         #kb_options = "ctrl:nocaps";
       };
 
       "$mod" = "SUPER";
 
       bind = [
-        "$mod, RETURN, exec, wezterm"
+        "$mod, RETURN, exec, kitty"
         "$mod, F, exec, firefox"
         "$mod, D, exec, vesktop"
         "$mod, R, exec, rofi -show drun"
@@ -59,10 +59,6 @@
         "$mod, W, killactive"
 
         "$mod, M, exit"
-        "$mod, h, movefocus, l"
-        "$mod, l, movefocus, r"
-        "$mod, k, movefocus, u"
-        "$mod, j, movefocus, d"
 
         "$mod, 1, workspace, 1"
         "$mod, 2, workspace, 2"
