@@ -8,13 +8,14 @@
 
       #monitor = name, resolution, position, scale
       #monitor = DP-1, 1920x1080@144, 0x0, 1
+      # --enable-features=UseOzonePlatform --ozone-platform=wayland --disable-features=WaylandFractionalScaleV1
       # https://wiki.hyprland.org/Configuring/Monitors/
       monitor = if device == "laptop" then [
-        "eDPI-1,preferred,auto,1"
-        ",preferred,auto-up,auto"
+        ",preferred,auto,1"
+        ",preferred,auto-up,1"
       ] else [
         ",preferred,auto,1"
-        ",preferred,auto-left,auto"
+        ",preferred,auto-left,1"
       ];
 
 
@@ -29,15 +30,17 @@
         };
 
       misc = {
+        vfr = true;
         disable_hyprland_logo = true;
         disable_splash_rendering = true;
       };
 
-      /*
+      
       decoration = {
         rounding = 2;
       };
 
+      /*
       animations = {
         enabled = false;
       };*/
