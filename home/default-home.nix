@@ -36,8 +36,6 @@
       rofi-wayland            # Alternativa a dmenu
       pavucontrol
 
-      kitty
-
       #LSP and Compilares and Languages
       nil
       clang
