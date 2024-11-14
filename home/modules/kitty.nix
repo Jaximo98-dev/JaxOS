@@ -13,7 +13,7 @@
       # FOnt
       font_family = "JetBrainsMono Nerd Font";
       font_size = "11.0";
-      adjust_line_height = "140%";
+      #adjust_line_height = "140%";
       disable_ligatures = "cursor";
 
       # Main window
