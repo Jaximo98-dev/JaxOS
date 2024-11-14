@@ -38,6 +38,7 @@
       brightnessctl   # Keyboad backlight for laptop
       rofi-wayland            # Alternativa a dmenu
       pavucontrol
+      wireplumber
 
       #LSP and Compilares and Languages
       nil

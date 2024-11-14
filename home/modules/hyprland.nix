@@ -83,6 +83,7 @@
         swww init && swww img "$(find ~/JaxOS/wallpapers/ -type f \( -iname "*.jpg" -o -iname "*.png" -o -iname "*.jpeg" \) | shuf -n 1)"
       ''
       "waybar"
+      "bus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP" # Screenshare
       ];
     };
   };
