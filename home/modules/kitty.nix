@@ -27,6 +27,7 @@
       # Background
       background_opacity = "0.9";
       #dynamic_background_opacity = "true";
+      cursor_shape = "beam";
 
       # Misc
       editor = "codium"; # TODO: La env "EDITOR" está establecida a nano... esperar a nvim
@@ -36,10 +37,6 @@
 
       update_check_interval = "0";
 
-    };
-
-    extras = {
-      useSymbolsFromNerdFont = "JetBrainsMono Nerd Font";
     };
   };
 }
