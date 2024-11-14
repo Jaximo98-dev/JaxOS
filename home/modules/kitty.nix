@@ -4,6 +4,8 @@
   programs.kitty = {
     enable = true;
 
+    shellIntegration.enableZshIntegration = true;
+
     settings = {
 
       theme = "Gruvbox Dark";
@@ -32,11 +34,10 @@
       # Misc
       editor = "codium"; # TODO: La env "EDITOR" está establecida a nano... esperar a nvim
       scrollback_lines = "5000";
-
-
-
+      include = "./current-theme.conf";
       update_check_interval = "0";
 
     };
+    environment.CURRENT_TERMINAL = "kitty";
   };
 }

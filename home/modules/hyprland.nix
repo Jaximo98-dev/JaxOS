@@ -24,8 +24,8 @@
       ];
 
       general = {
-        gaps_in = 2;
-        gaps_out = 3;
+        gaps_in = 1;
+        gaps_out = 1;
       };
 
       xwayland = {
@@ -40,7 +40,7 @@
 
       
       decoration = {
-        rounding = 2;
+        rounding = 10;
       };
 
       /*
