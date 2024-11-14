@@ -5,10 +5,11 @@
     #ARCHIVED: ./modules/xsession.nix      # Initial xsession
     ./modules/hyprland.nix
 
+    ./modules/kitty.nix
     ./modules/zsh.nix           # Shell interpreter
     ./modules/zoxide.nix
     #ARCHIVED: ./modules/alacritty.nix     # Terminal emulator
-    ./modules/wezterm.nix
+    #./modules/wezterm.nix
     #ARCHIVED: ./modules/tmux.nix          # Session manager
 
     #./modules/neovim.nix        # code editor 1
@@ -36,7 +37,6 @@
       pavucontrol
 
       kitty
-      foot
 
       #LSP and Compilares and Languages
       nil

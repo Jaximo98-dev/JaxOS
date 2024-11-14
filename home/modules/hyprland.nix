@@ -1,5 +1,10 @@
-{device, ...}:
+{pkgs, device, ...}:
 {
+
+  home.packages = with pkgs; [
+    swww
+  ];
+
   wayland.windowManager.hyprland = {
     enable = true;
     xwayland.enable = true;
@@ -18,12 +23,10 @@
         ",preferred,auto-left,1"
       ];
 
-
-
-      /*general = {
+      general = {
         gaps_in = 2;
         gaps_out = 3;
-      };*/
+      };
 
       xwayland = {
           force_zero_scaling = true;
