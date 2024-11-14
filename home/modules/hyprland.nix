@@ -77,6 +77,13 @@
         "$mod, 9, workspace, 9"
         "$mod, 0, workspace, 10"
       ];
+
+      exec-once = [
+      ''
+        swww init && swww img "$(find ~/JaxOS/wallpapers/ -type f \( -iname "*.jpg" -o -iname "*.png" -o -iname "*.jpeg" \) | shuf -n 1)"
+      ''
+      "waybar"
+      ];
     };
   };
 }

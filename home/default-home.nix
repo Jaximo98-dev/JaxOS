@@ -3,19 +3,22 @@
   imports = 
   [
     #ARCHIVED: ./modules/xsession.nix      # Initial xsession
-    ./modules/hyprland.nix
-
-    ./modules/kitty.nix
-    ./modules/zsh.nix           # Shell interpreter
-    ./modules/zoxide.nix
     #ARCHIVED: ./modules/alacritty.nix     # Terminal emulator
-    #./modules/wezterm.nix
+    #ARCHIVED:./modules/wezterm.nix
     #ARCHIVED: ./modules/tmux.nix          # Session manager
-
-    #./modules/neovim.nix        # code editor 1
+    #ARCHIVED: ./modules/neovim.nix        # code editor 1
     #ARCHIVED: ./modules/polybar.nix       # bar
+
+
+    ./modules/hyprland.nix
+    ./modules/kitty.nix
+
+    ./modules/zsh.nix           # Shell interpreter
+
+    ./modules/zoxide.nix
     ./modules/git.nix           # git
     ./modules/btop.nix          # Performance monitor
+
     ./modules/firefox.nix       # firefox
 
   ];
