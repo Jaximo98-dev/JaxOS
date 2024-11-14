@@ -11,6 +11,7 @@
 
 
     ./modules/hyprland.nix
+    ./modules/waybar.nix
     ./modules/kitty.nix
 
     ./modules/zsh.nix           # Shell interpreter
