@@ -13,7 +13,7 @@
       # FOnt
       font_family = "JetBrainsMono Nerd Font";
       font_size = "11.0";
-      #adjust_line_height = "140%";
+      adjust_line_height = "80%";
       disable_ligatures = "cursor";
 
       # Main window
@@ -28,7 +28,7 @@
 
       # Background
       background_opacity = "0.9";
-      #dynamic_background_opacity = "true";
+      dynamic_background_opacity = "true";
       cursor_shape = "beam";
 
       # Misc
