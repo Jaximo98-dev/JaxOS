@@ -14,11 +14,11 @@
     ./modules/kitty.nix
 
     ./modules/zsh.nix           # Shell interpreter
-
     ./modules/zoxide.nix
     ./modules/git.nix           # git
     ./modules/btop.nix          # Performance monitor
 
+    ./modules/rofi.nix
     ./modules/firefox.nix       # firefox
 
   ];
@@ -32,13 +32,13 @@
       gnumake
 
       tree
+      yazi
       tealdeer
-      thefuck
       ncdu
       brightnessctl   # Keyboad backlight for laptop
-      rofi-wayland            # Alternativa a dmenu
+      
       pavucontrol
-      wireplumber
+      
 
       #LSP and Compilares and Languages
       nil
@@ -58,7 +58,11 @@
       vlc
       obsidian
       gnome.nautilus
+
+      # Discord
       vesktop
+      xwaylandvideobridge # Screenshare fix on x11 windows
+      wireplumber # Screenshare audio
       
     ];
 
