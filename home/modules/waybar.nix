@@ -1,5 +1,5 @@
 let
-  colors = import ../themes/colors.nix;
+  colors = import ../../themes/colors.nix;
 in
 {
   programs.waybar = {
@@ -17,7 +17,7 @@ in
         "network" = {
           "format" = "{ifname}";
           "format-wifi" = "{essid} ";
-          "format-ethernet" = "󰈁";
+          "format-ethernet" = "[󰈁]";
           "format-disconnected" = "";
           "tooltip-format"= "{ifname} via {gwaddr} 󰊗";
           "tooltip-format-wifi"= "{essid} ({signalStrength}%) ";
@@ -97,10 +97,55 @@ in
     }
 
     window#waybar {
-        background-color: rgba(${rgb.bg},0.4);
+        background-color: rgba(${rgb.bg},1);
         color: rgba(${rgb.fg},1);
     }
 
+    #workspaces button {
+    padding: 0 10px;
+    background-color: #282828;
+    color: #ebdbb2;
+    
+    box-shadow: inset 0 -3px transparent;
+    border: none;
+    border-radius: 0;
+    }
+
+    #workspaces button:hover {
+      background: rgba(0, 0, 0, 0.2);
+      background-color: #3c3836;
+    }
+
+    #workspaces button.focused {
+      background-color: #3c3836;
+      color: #ebdbb2;
+    }
+
+    #workspaces button.urgent {
+      background-color: #fbf1c7;
+      color: #3c3836;
+    }
+
+    #clock,
+#battery,
+#cpu,
+#memory,
+#disk,
+#temperature,
+#backlight,
+#network,
+#pulseaudio,
+#custom-media,
+#tray,
+#mode,
+#idle_inhibitor,
+#custom-poweroff,
+#custom-suspend,
+#mpd {
+    padding: 0 10px;
+    background-color: #282828;
+    color: #ebdbb2;
+}
 
     '';
 

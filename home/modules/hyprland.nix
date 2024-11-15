@@ -74,10 +74,10 @@ faded_orange   = rgba(af3a03ff); /* #af3a03 - 175-58-3
         layout = "dwindle";
 
         gaps_in = 2;
-        gaps_out = 2;
+        gaps_out = 0;
         resize_on_border = true;
         "col.inactive_border" = "rgba(282828ff)";
-        "col.active_border" = "rgba(928374ff)";
+        "col.active_border" = "rgba(32302fff)";
       };
 
       xwayland = {
@@ -101,7 +101,7 @@ faded_orange   = rgba(af3a03ff); /* #af3a03 - 175-58-3
         bezier = "easeOutExpo, 0.16, 1, 0.3, 1";
 
         animation = [
-          "windows, 1, 7, easeOutExpo"
+          "windows, 0"
           "windowsOut, 1, 7, default, popin 80%"
           "workspaces, 1, 6, default"
         ];
