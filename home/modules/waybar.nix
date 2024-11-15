@@ -1,4 +1,6 @@
-{config, ...}:
+let
+  colors = import ../themes/colors.nix;
+in
 {
   programs.waybar = {
     enable = true;
@@ -6,7 +8,7 @@
       mainBar = {
         layer = "top";
         position = "top";
-        height = 30;
+        height = 25;
 
         modules-left = ["hyprland/workspaces"];
         modules-center = ["clock"];
@@ -62,10 +64,9 @@
         "clock" = {
           "format" = "{:%A, %d. %B  %H:%M}";
           "timezone" = "Europe/Madrid";
-          "tooltip-format" = "<tt>{calendar}";
+          "tooltip-format" = "<tt>{calendar}</tt>";
           "calendar" = {
             "mode" = "year";
-            "mode-mon-col" = "3";
             "week-pos" = "right";
             "format" = {
                 "months" =     "<span color='#ffead3'><b>{}</b></span>";
@@ -84,56 +85,24 @@
 
       };
     };
-    style = ''
-        * {
-            font-family: JetBrainsMono Nerd Font;
-            font-size: 12px;
-            border: none;
-            border-radius: 0;
-            box-shadow:    none;
-            text-shadow:   none;
-            transition-duration: 0s;
-        }
+    style = with colors.gruvbox; ''
+    * {
+        font-family: JetBrainsMono Nerd Font;
+        font-size: 12px;
+        border: none;
+        border-radius: 0;
+        box-shadow: none;
+        text-shadow: none;
+        transition-duration: 0s;
+    }
 
-        window#waybar {
-            background-color: rgba(${config.colorScheme.palette.base00}14);
-            color: ${config.colorScheme.palette.base07};
-        }
-
-        #workspaces {
-            margin: 0 5px
-        }
-
-        #workspaces button {
-            padding:    0 5px;
-            color:      rgba(${config.colorScheme.palette.base02}14);
-        }
-
-        #workspaces button.visible {
-            color:      rgba(${config.colorScheme.palette.base00}14);
-        }
-
-        #workspaces button.focused {
-            border-top: 3px solid rgba(${config.colorScheme.palette.base00}14);
-        }
-
-        #workspaces button.urgent {
-            color:      rgba(${config.colorScheme.palette.base08}ff);
-        }
-
-
-        #battery.warning {
-            color:       rgba(${config.colorScheme.palette.base09}ff);
-        }
-        #battery.critical {
-            color:      rgba(${config.colorScheme.palette.base08}ff);
-        }
-        #battery.charging {
-            color:      rgba(${config.colorScheme.palette.base07}ff);
-        }
-
+    window#waybar {
+        background-color: rgba(${rgb.bg},0.4);
+        color: rgba(${rgb.fg},1);
+    }
 
 
     '';
+
   };
 }

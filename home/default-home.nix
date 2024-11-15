@@ -1,9 +1,7 @@
-{lib, pkgs, username, device, nix-colors, ... }:{
+{lib, pkgs, username, device, ... }:{
 
   imports = 
   [
-    nix-colors.homeManagerModules.default
-
     #ARCHIVED: ./modules/xsession.nix      # Initial xsession
     #ARCHIVED: ./modules/alacritty.nix     # Terminal emulator
     #ARCHIVED:./modules/wezterm.nix
@@ -25,8 +23,6 @@
     ./modules/firefox.nix       # firefox
 
   ];
-
-  colorScheme = nix-colors.colorSchemes.gruvbox-dark-medium;
 
   home = {
     username = username;

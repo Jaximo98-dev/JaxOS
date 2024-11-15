@@ -10,12 +10,11 @@
 			inputs.nixpkgs.follows = "nixpkgs";
 		};
 
-    nix-colors.url = "github:misterio77/nix-colors";
     nur.url = "github:nix-community/NUR";
 
 	};
 
-	outputs = { self, nixpkgs, home-manager, nur, nix-colors, ...}:
+	outputs = { self, nixpkgs, home-manager, nur, ...}:
 		let
       username = "jaximo";
       device = "desktop";
@@ -43,7 +42,7 @@
                     ./home/default-home.nix
                     ]; 
                 };
-                home-manager.extraSpecialArgs = { inherit username ; device = "desktop"; inherit nix-colors; };
+                home-manager.extraSpecialArgs = { inherit username ; device = "desktop"; };
                 home-manager.backupFileExtension = "backup";
              }
           ];
@@ -66,7 +65,7 @@
                     ./home/default-home.nix
                     ]; 
                 };
-                home-manager.extraSpecialArgs = { inherit username ; device = "laptop"; inherit nix-colors; };
+                home-manager.extraSpecialArgs = { inherit username ; device = "laptop"; };
                 home-manager.backupFileExtension = "backup";
              }
           ];

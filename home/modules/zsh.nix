@@ -20,7 +20,6 @@
       pa = "cd ~/Documentos/proyectos/abyssmmo";
 
       # Custom functions
-      fondo = "feh --bg-fill --randomize ~/JaxOS/wallpapers/*";
       tiempo = "curl https://wttr.in/Malaga";
       weather = "curl https://wttr.in/Malaga";
     };
