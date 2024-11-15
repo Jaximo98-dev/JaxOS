@@ -73,8 +73,8 @@ faded_orange   = rgba(af3a03ff); /* #af3a03 - 175-58-3
       general = {
         layout = "dwindle";
 
-        gaps_in = 4;
-        gaps_out = 0;
+        gaps_in = 2;
+        gaps_out = 2;
         resize_on_border = true;
         "col.inactive_border" = "rgba(282828ff)";
         "col.active_border" = "rgba(928374ff)";
@@ -109,8 +109,6 @@ faded_orange   = rgba(af3a03ff); /* #af3a03 - 175-58-3
 
       input = {
         kb_layout = "es";
-        #kb_variant = "qwerty";
-        #kb_options = "ctrl:nocaps";
       };
 
       "$mod" = "SUPER";
@@ -135,6 +133,21 @@ faded_orange   = rgba(af3a03ff); /* #af3a03 - 175-58-3
         "$mod, 8, workspace, 8"
         "$mod, 9, workspace, 9"
         "$mod, 0, workspace, 10"
+
+        "$mod SHIFT, 1, movetoworkspace, 1"
+        "$mod SHIFT, 2, movetoworkspace, 2"
+        "$mod SHIFT, 3, movetoworkspace, 3"
+        "$mod SHIFT, 4, movetoworkspace, 4"
+        "$mod SHIFT, 5, movetoworkspace, 5"
+        "$mod SHIFT, 6, movetoworkspace, 6"
+        "$mod SHIFT, 7, movetoworkspace, 7"
+        "$mod SHIFT, 8, movetoworkspace, 8"
+        "$mod SHIFT, 9, movetoworkspace, 9"
+        "$mod SHIFT, 0, movetoworkspace, 10"
+
+
+        "$mod, V, togglefloating,"
+        "$mod, SPACE, fullscreen"
       ];
 
       exec-once = [

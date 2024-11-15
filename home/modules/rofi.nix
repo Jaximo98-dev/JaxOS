@@ -8,8 +8,7 @@
     terminal = "${pkgs.kitty}/bin/kitty";
     
     plugins = with pkgs; [
-      rofi-calc
-      rofi-obsidian
+      
     ];
   };
 }

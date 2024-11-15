@@ -11,7 +11,7 @@
 
 
     ./modules/hyprland.nix
-    ./modules/waybar.nix
+    ./modules/waybar/waybar.nix
     ./modules/kitty.nix
 
     ./modules/zsh.nix           # Shell interpreter
@@ -37,7 +37,6 @@
       tealdeer
       ncdu
       brightnessctl   # Keyboad backlight for laptop
-      
       pavucontrol
       
 
