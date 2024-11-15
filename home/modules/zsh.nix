@@ -1,4 +1,4 @@
-{ config, pkgs, device, ...}:
+{device, ...}:
 
 {
   programs.zsh = {
@@ -28,7 +28,7 @@
     # Oh my zsh!
     oh-my-zsh = {
       enable = true;
-      plugins = [ "git" "thefuck" "colored-man-pages" ];
+      plugins = [ "git" "colored-man-pages" ];
       theme = "robbyrussell";
     };
   };

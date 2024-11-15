@@ -13,12 +13,13 @@
         "network" = {
           "format" = "{ifname}";
           "format-wifi" = "{essid} ";
-          "format-ethernet" = "󰊗";
+          "format-ethernet" = "󰈁";
           "format-disconnected" = "";
           "tooltip-format"= "{ifname} via {gwaddr} 󰊗";
           "tooltip-format-wifi"= "{essid} ({signalStrength}%) ";
           "tooltip-format-ethernet"= "{ipaddr}/{cidr} | {ifname} ";
           "tooltip-format-disconnected"= "Disconnected";
+          "on-click" = "kitty --execute nmtui";
         };
 
 
@@ -59,8 +60,7 @@
         "clock" = {
           "format" = "{:%A, %d. %B  %H:%M}";
           "timezone" = "Europe/Madrid";
-          "tooltip-format" = "<tt><small>{calendar}</small></tt>";
-          "max-length"= "25";
+          "tooltip-format" = "<tt>{calendar}";
           "calendar" = {
             "mode" = "year";
             "mode-mon-col" = "3";
