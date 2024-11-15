@@ -1,3 +1,4 @@
+{config, ...}:
 {
   programs.waybar = {
     enable = true;
@@ -7,7 +8,7 @@
         position = "top";
         height = 30;
 
-        modules-left = ["hyprland/workspaces" "hyprland/window"];
+        modules-left = ["hyprland/workspaces"];
         modules-center = ["clock"];
         modules-right = [ "network" "backlight" "pulseaudio" "battery"  ];
 
@@ -83,6 +84,56 @@
 
       };
     };
-    style = builtins.readFile ./style.css;
+    style = ''
+        * {
+            font-family: JetBrainsMono Nerd Font;
+            font-size: 12px;
+            border: none;
+            border-radius: 0;
+            box-shadow:    none;
+            text-shadow:   none;
+            transition-duration: 0s;
+        }
+
+        window#waybar {
+            background-color: rgba(${config.colorScheme.palette.base00}14);
+            color: ${config.colorScheme.palette.base07};
+        }
+
+        #workspaces {
+            margin: 0 5px
+        }
+
+        #workspaces button {
+            padding:    0 5px;
+            color:      rgba(${config.colorScheme.palette.base02}14);
+        }
+
+        #workspaces button.visible {
+            color:      rgba(${config.colorScheme.palette.base00}14);
+        }
+
+        #workspaces button.focused {
+            border-top: 3px solid rgba(${config.colorScheme.palette.base00}14);
+        }
+
+        #workspaces button.urgent {
+            color:      rgba(${config.colorScheme.palette.base08}ff);
+        }
+
+
+        #battery.warning {
+            color:       rgba(${config.colorScheme.palette.base09}ff);
+        }
+        #battery.critical {
+            color:      rgba(${config.colorScheme.palette.base08}ff);
+        }
+        #battery.charging {
+            color:      rgba(${config.colorScheme.palette.base07}ff);
+        }
+
+
+
+    '';
   };
 }
