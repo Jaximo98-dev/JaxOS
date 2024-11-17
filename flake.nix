@@ -9,12 +9,18 @@
 			url = "github:nix-community/home-manager/release-24.05";
 			inputs.nixpkgs.follows = "nixpkgs";
 		};
+    nixvim = {
+      #url = "github:nix-community/nixvim";
+      # If you are not running an unstable channel of nixpkgs, select the corresponding branch of nixvim.
+      url = "github:nix-community/nixvim/nixos-24.05";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
 
     nur.url = "github:nix-community/NUR";
 
 	};
 
-	outputs = { self, nixpkgs, home-manager, nur, ...}:
+	outputs = { self, nixpkgs, home-manager, nur, nixvim, ...}:
 		let
       username = "jaximo";
       device = "desktop";
@@ -39,6 +45,7 @@
                 home-manager.users.${username} = {
                   imports = [
                     nur.hmModules.nur
+                    nixvim.homeManagerModules.nixvim
                     ./home/default-home.nix
                     ]; 
                 };
@@ -62,6 +69,7 @@
                 home-manager.users.${username} = {
                   imports = [
                     nur.hmModules.nur
+                    nixvim.homeManagerModules.nixvim
                     ./home/default-home.nix
                     ]; 
                 };

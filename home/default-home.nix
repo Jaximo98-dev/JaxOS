@@ -20,7 +20,8 @@
     ./modules/btop.nix          # Performance monitor
 
     ./modules/rofi.nix
-    ./modules/firefox.nix       # firefox
+    ./modules/firefox.nix       # firefoxt
+    ./modules/nixvim.nix
 
   ];
 
