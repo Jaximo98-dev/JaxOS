@@ -2,7 +2,9 @@
 
 {
   imports =
-    [ 
+    [
+      ./modules/filesystem.nix
+
       ./modules/wayland.nix
       ./modules/localization.nix
       ./modules/devices.nix
