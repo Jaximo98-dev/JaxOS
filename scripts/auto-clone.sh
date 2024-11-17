@@ -5,6 +5,9 @@ sync_repo() {
     REPO_URL=$1
     REPO_DIR=$2
 
+    # Verifica si el directorio de destino existe, sino lo crea
+    mkdir -p "$REPO_DIR"
+
     # Verifica si el repositorio ya existe
     if [ ! -d "$REPO_DIR/.git" ]; then
         echo "Cloning $REPO_URL into $REPO_DIR..."
