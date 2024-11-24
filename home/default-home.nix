@@ -32,6 +32,7 @@
       # Fundamentales/Cimientos
       home-manager
       gnumake
+      bat
 
       tree
       yazi

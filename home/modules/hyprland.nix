@@ -19,9 +19,19 @@
         ",preferred,auto,1"
         ",preferred,auto-up,1"
       ] else [
-        ",preferred,auto,1"
-        ",preferred,auto-left,1"
+        "DP-3,preferred,auto,1"
+        "HDMI-A-1,preferred,auto-left,1,transform,3"
       ];
+
+/*
+      monitor = if device == "laptop" then [
+        ",preferred,auto,1"
+        ",preferred,auto-up,1"
+      ] else [
+        "DP-3,preferred,auto,1"
+        "HDMI-A-1,preferred,auto-left,1,transform,3"
+      ];
+*/
 
 /*
 dark0_hard = rgba(1d2021ff);   /* #1d2021 - 29-32-33 

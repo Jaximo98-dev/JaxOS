@@ -16,8 +16,9 @@
     "d /home/jaximo/personal/scratchpad/ 0777 jaximo users"
 
     "d /home/jaximo/university/ 0777 jaximo users"
+    "d /home/jaximo/university/scratchpad/ 0777 jaximo users"
   ];
-
+  /*
   # Clones all configured repos into my predifined paths
   systemd.services.clone-repos = {
     description = "Clone personal repos, checks for Github auth";
@@ -44,5 +45,6 @@
     };
     
   };
+*/
 
 }

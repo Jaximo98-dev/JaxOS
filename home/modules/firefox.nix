@@ -306,6 +306,10 @@
         URL = "https://open.spotify.com/";
       }
       {
+        Title = "Youtube Music";
+        URL = "https://music.youtube.com/";
+      }
+      {
         Title = "ChatGPT";
         URL = "https://chatgpt.com/";
       }
