@@ -3,7 +3,7 @@
 {
 
   imports = [
-    "./telescope.nix"
+    ./telescope.nix
   ];
 
 
