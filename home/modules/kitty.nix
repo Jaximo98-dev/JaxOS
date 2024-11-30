@@ -18,7 +18,7 @@
 
       # Main window
       hide_window_decorations = "titlebar-only";
-      window_padding_width = "10";
+      window_padding_width = "0";
 
       # Tabs tab bar
       tab_bar_edge = "bottom";
