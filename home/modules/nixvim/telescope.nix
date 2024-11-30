@@ -2,6 +2,8 @@
   programs.nixvim = {
     # Fuzzy Finder (files, lsp, etc)
     # https://nix-community.github.io/nixvim/plugins/telescope/index.html
+    plugins.telescope.enable = true;
+    /*
     plugins.telescope = {
       # Telescope is a fuzzy finder that comes with a lot of different things that
       # it can fuzzy find! It's more than just a "file finder", it can search
@@ -164,6 +166,7 @@
           desc = "[S]earch [N]eovim files";
         };
       }
-    ];
+    ];*/
   };
+  
 }

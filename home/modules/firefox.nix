@@ -19,8 +19,8 @@
       search.default = "DuckDuckGo";
       search.force = true;
 
-      # TODO: Enable per default
       extensions = with config.nur.repos.rycee.firefox-addons; [
+        sidebery
         darkreader
         octotree
         ublock-origin
@@ -32,6 +32,19 @@
 
       userChrome = ''
         @import url("firefox-theme/chrome/userChrome.css");
+
+        #main-window #titlebar {
+          overflow: hidden;
+          transition: height 0.3s 0.3s !important;
+        }
+        /* Default state: Set initial height to enable animation */
+        #main-window #titlebar { height: 3em !important; }
+        #main-window[uidensity="touch"] #titlebar { height: 3.35em !important; }
+        #main-window[uidensity="compact"] #titlebar { height: 2.7em !important; }
+        /* Hidden state: Hide native tabs strip */
+        #main-window[titlepreface*="XXX"] #titlebar { height: 0 !important; }
+        /* Hidden state: Fix z-index of active pinned tabs */
+        #main-window[titlepreface*="XXX"] #tabbrowser-tabs { z-index: 0 !important; }
       '';
       userContent = ''
         @import url("firefox-theme/chrome/userContent.css");
@@ -261,72 +274,72 @@
     };
 
     policies = {
-    NoDefaultBookmarks = true;
+      NoDefaultBookmarks = true;
 
-    # TODO: Not working...  https://github.com/nix-community/home-manager/issues/3569
-    SearchEngines = {
-      PreventInstalls = true;
-      Add = [
+      # TODO: Not working...  https://github.com/nix-community/home-manager/issues/3569
+      SearchEngines = {
+        PreventInstalls = true;
+        Add = [
+          {
+            Name = "MyNixOS";
+            URLTemplate = "https://mynixos.com/search?q={searchTerms}";
+            Method = "GET";
+            Description = "Search MyNixOS packages";
+          }
+          {
+            Name = "RAE";
+            URLTemplate = "https://dle.rae.es/{searchTerms}";
+            Method = "GET";
+            Description = "Spanish Real Academy Dictionary";
+          }
+        ];
+        Remove = [
+          "Amazon.com"
+          "Bing"
+          "Google"
+          "Qwant"
+          "Wikipedia (en)"
+        ];
+        Default = "DuckDuckGo";
+      };
+
+      Bookmarks = [
         {
-          Name = "MyNixOS";
-          URLTemplate = "https://mynixos.com/search?q={searchTerms}";
-          Method = "GET";
-          Description = "Search MyNixOS packages";
+          Title = "Gmail";
+          URL = "https://mail.google.com/";
+          Folder = "Private";
         }
         {
-          Name = "RAE";
-          URLTemplate = "https://dle.rae.es/{searchTerms}";
-          Method = "GET";
-          Description = "Spanish Real Academy Dictionary";
+          Title = "CV";
+          URL = "https://informatica.cv.uma.es/";
+          Folder = "Private";
+        }
+        {
+          Title = "Spotify";
+          URL = "https://open.spotify.com/";
+        }
+        {
+          Title = "Youtube Music";
+          URL = "https://music.youtube.com/";
+        }
+        {
+          Title = "ChatGPT";
+          URL = "https://chatgpt.com/";
+        }
+        {
+          Title = "WhatsApp Web";
+          URL = "https://web.whatsapp.com/";
+          Folder = "Private";
+        }
+        {
+          Title = "Gitbook";
+          URL = "https://app.gitbook.com/o/JVk3cZvIVIu83u4yjTrl/s/cUFXoXiseORYBckkMbVy/papeles-de-diseno/mecanicas-principales";
+        }
+        {
+          Title = "Github";
+          URL = "https://github.com/Jaximo98-dev/";
         }
       ];
-      Remove = [
-        "Amazon.com"
-        "Bing"
-        "Google"
-        "Qwant"
-        "Wikipedia (en)"
-      ];
-      Default = "DuckDuckGo";
     };
-
-    Bookmarks = [
-      {
-        Title = "Gmail";
-        URL = "https://mail.google.com/";
-        Folder = "Private";
-      }
-      {
-        Title = "CV";
-        URL = "https://informatica.cv.uma.es/";
-        Folder = "Private";
-      }
-      {
-        Title = "Spotify";
-        URL = "https://open.spotify.com/";
-      }
-      {
-        Title = "Youtube Music";
-        URL = "https://music.youtube.com/";
-      }
-      {
-        Title = "ChatGPT";
-        URL = "https://chatgpt.com/";
-      }
-      {
-        Title = "WhatsApp Web";
-        URL = "https://web.whatsapp.com/";
-        Folder = "Private";
-      }
-      {
-        Title = "Gitbook";
-        URL = "https://app.gitbook.com/o/JVk3cZvIVIu83u4yjTrl/s/cUFXoXiseORYBckkMbVy/papeles-de-diseno/mecanicas-principales";
-      }
-      {
-        Title = "Github";
-        URL = "https://github.com/Jaximo98-dev/";
-      }
-    ];
-  };
   };
 }
