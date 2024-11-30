@@ -6,6 +6,10 @@
     ./telescope.nix
   ];
 
+  home.packages = with pkgs; [
+    lua
+  ];
+
 
   programs.nixvim = {
     enable = true;
