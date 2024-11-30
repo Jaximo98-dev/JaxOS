@@ -21,7 +21,7 @@
 
     ./modules/rofi.nix
     ./modules/firefox.nix       # firefoxt
-    ./modules/nixvim/nixvim.nix
+    ./modules/nixvim.nix
 
   ];
 

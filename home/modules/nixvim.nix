@@ -1,10 +1,18 @@
 {
 
   imports = [
-    ./mappings.nix
+    ./nixvim/mappings.nix
+    # Files
+    ./nixvim/telescope.nix
+    ./nixvim/treesitter.nix
 
-    ./telescope.nix
-    ./treesitter.nix
+    # LSP and similar
+    ./nixvim/conform.nix
+
+    # Misc
+    ./nixvim/mini.nix
+    ./nixvim/gitsigns.nix
+    ./nixvim/which-key.nix
   ];
 
   programs.nixvim = {

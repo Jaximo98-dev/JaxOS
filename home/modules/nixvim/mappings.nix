@@ -4,7 +4,7 @@
     {
         mode = "n";
         key = "<leader>pv";
-        action = "Ex";
+        action.__raw = "vim.cmd.Ex";
         options = {
           desc = "Open file explorer.";
         };
