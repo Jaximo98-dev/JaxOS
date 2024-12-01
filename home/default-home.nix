@@ -59,7 +59,6 @@
       # Apps
       vlc
       obsidian
-      gnome.nautilus
 
       # Discord
       vesktop

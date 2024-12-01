@@ -76,7 +76,7 @@
           enable = true;
         };
 
-        java-language-server = {
+        java_language_server = {
           enable = true;
         };
 

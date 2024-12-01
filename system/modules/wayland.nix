@@ -4,7 +4,7 @@
 { config, pkgs, lib, device, ... }:
 {
 
-  hardware.opengl.enable = true; # Para que no de errores wayland
+  hardware.graphics.enable = true; # Para que no de errores wayland
   security.polkit.enable = true; # Para permisos granulados entre procesos no priv to priv
 
   environment.systemPackages = with pkgs; [

@@ -55,7 +55,8 @@
 
   # Fonts
   fonts.packages = with pkgs; [
-  (nerdfonts.override { fonts = [ "FiraCode" "JetBrainsMono" ]; })
+    fira-code-nerdfont
+    jetbrains-mono
   ];
 
   # Local clock for dualboot desync issues
