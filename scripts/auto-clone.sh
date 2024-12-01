@@ -22,6 +22,6 @@ sync_repo() {
 }
 
 # Clonación o actualización de repositorios
-sync_repo "https://github.com/jaximo98-dev/Abyssmmo.git" "/home/jaximo/development/projects/abyssmmo"
-sync_repo "https://github.com/jaximo98-dev/obsidian.git" "/home/jaximo/personal/vaults/obsidian"
-sync_repo "https://github.com/jaximo98-dev/obsidian-estudios.git" "/home/jaximo/personal/vaults/obsidian-estudios"
+sync_repo "https://github.com/jaximo98/Abyssmmo.git" "/home/jaximo/development/projects/abyssmmo"
+sync_repo "https://github.com/jaximo98/obsidian.git" "/home/jaximo/personal/vaults/obsidian"
+sync_repo "https://github.com/jaximo98/obsidian-estudios.git" "/home/jaximo/personal/vaults/obsidian-estudios"

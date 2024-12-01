@@ -19,12 +19,14 @@
       # Main window
       hide_window_decorations = "titlebar-only";
       window_padding_width = "0";
+      window_margin_width = "0";
 
       # Tabs tab bar
       tab_bar_edge = "bottom";
       tab_bar_style = "powerline";
       tab_bar_min_tabs = "1";
       tab_title_template = "{fmt.fg.red}{bell_symbol}{activity_symbol}{fmt.fg.tab}{index}:{title}";
+      tab_bar_margin_height = "0.0";
 
       # Background
       background_opacity = "0.9";

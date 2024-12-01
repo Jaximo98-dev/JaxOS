@@ -4,7 +4,7 @@
   programs.lazygit.enable = true;
   programs.git = {
     enable = true;
-    userName  = "Jaximo98-dev";
+    userName  = "Jaximo98";
     userEmail = "jaximo98dev@gmail.com";
 
     extraConfig = {
