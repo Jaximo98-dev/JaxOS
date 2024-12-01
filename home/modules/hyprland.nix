@@ -26,7 +26,7 @@
       general = {
         layout = "dwindle";
 
-        gaps_in = 2;
+        gaps_in = 0;
         gaps_out = 0;
         resize_on_border = true;
         "col.inactive_border" = "rgba(282828ff)";

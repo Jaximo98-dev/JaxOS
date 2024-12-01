@@ -12,6 +12,7 @@
     # https://nix-community.github.io/nixvim/plugins/conform-nvim.html
     plugins.conform-nvim = {
       enable = true;
+      
       settings = {
         notify_on_error = false;
         format_on_save = ''
@@ -27,7 +28,9 @@
           end
         '';
         formatters_by_ft = {
+          "*" = [ "trim_whitespace" ];
           lua = ["stylua"];
+          go = ["gofmt"];
           # Conform can also run multiple formatters sequentially
           # python = [ "isort "black" ];
           #
@@ -36,6 +39,8 @@
           # javascript = [ [ "prettierd" "prettier" ] ];
         };
       };
+
+
     };
 
     # https://nix-community.github.io/nixvim/keymaps/index.html

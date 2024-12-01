@@ -1,18 +1,22 @@
 {
 
+  # Reference: https://github.com/JMartJonesy/kickstart.nixvim/
+
   imports = [
     ./nixvim/mappings.nix
     # Files
     ./nixvim/telescope.nix
     ./nixvim/treesitter.nix
+    ./nixvim/neo-tree.nix
 
     # LSP and similar
-    # ./nixvim/conform.nix # No quiere funcionar pero es interesante
+    ./nixvim/conform.nix # No quiere funcionar pero es interesante
+    ./nixvim/nvim-cmp.nix
+    ./nixvim/lsp.nix
 
     # Misc
     ./nixvim/mini.nix
     ./nixvim/gitsigns.nix
-    #./nixvim/which-key.nix
   ];
 
   programs.nixvim = {
@@ -20,6 +24,32 @@
     colorschemes.gruvbox.enable = true;
     viAlias = true;
     vimAlias = true;
+
+    plugins = {
+      # Adds icons for plugins to utilize in ui
+      # nvim-web-devicons.enable = true;
+
+      # Detect tabstop and shiftwidth automatically
+      # https://nix-community.github.io/nixvim/plugins/sleuth/index.html
+      sleuth.enable = true;
+
+      # Give information about possible keymaps
+      which-key.enable = true;
+
+      # Highlight todo, notes, etc in comments
+      # https://nix-community.github.io/nixvim/plugins/todo-comments/index.html
+      todo-comments.enable = true;
+
+      # Inserts matching pairs of parens, brackets, etc.
+      # https://nix-community.github.io/nixvim/plugins/nvim-autopairs/index.html
+      nvim-autopairs.enable = true;
+
+      # Add indentation guides even on blank lines. For configuration see `:help ibl`
+      # https://nix-community.github.io/nixvim/plugins/indent-blankline/index.html
+      indent-blankline.enable = true;
+
+      harpoon.enable = true;
+    };
 
     globals = {
       # Set <space> as the leader key
@@ -104,29 +134,7 @@
       hlsearch = true;
     };
 
-    plugins = {
-      # Adds icons for plugins to utilize in ui
 
-      # Detect tabstop and shiftwidth automatically
-      # https://nix-community.github.io/nixvim/plugins/sleuth/index.html
-      sleuth = {
-        enable = true;
-      };
-
-      which-key = {
-        enable = true;
-      };
-
-
-
-      # Highlight todo, notes, etc in comments
-      # https://nix-community.github.io/nixvim/plugins/todo-comments/index.html
-      todo-comments = {
-        enable = true;
-      };
-
-
-    };
 
     # TODO: Figure out where to move this
     # https://nix-community.github.io/nixvim/NeovimOptions/index.html?highlight=extraplugins#extraconfigluapre
