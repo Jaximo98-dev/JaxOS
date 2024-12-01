@@ -121,17 +121,12 @@
       ''
       "waybar"
       "bus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP" # Screenshare
+
+      # Apps
+      "firefox"
+      "kitty"
+      "codium"
       ];
     };
   };
-
-  services.home-manager.startup = {
-    enable = true;
-    commands = [
-      "firefox &"
-      "kitty &"
-      "codium &"
-    ];
-  };  
-
 }
