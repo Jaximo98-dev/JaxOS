@@ -1,5 +1,7 @@
 {device, ...}:
-
+let
+  shellAliases = import ./shell_aliases.nix { inherit device; };
+in
 {
   programs.zsh = {
     enable = true;
@@ -9,20 +11,7 @@
     syntaxHighlighting.enable = true;
     
 
-    shellAliases = {
-      ll = "ls -l";
-      rof = "rofi -show drun; exit";
-      cdj = "cd ~/JaxOS";
-      cdjmd = if(device == "desktop") then "cd ~/JaxOS; make desktop" else "echo Este es el portatil, zopenco.";
-      cdjml = if(device == "laptop") then "cd ~/JaxOS; make laptop" else "echo Este es el sobremesa, tifon.";
-      
-      pn = "cd ~/JaxOS/home/modules/nvim";
-      pa = "cd ~/Documentos/proyectos/abyssmmo";
-
-      # Custom functions
-      tiempo = "curl https://wttr.in/Malaga";
-      weather = "curl https://wttr.in/Malaga";
-    };
+    shellAliases = shellAliases.shellAliases;
 
     # Oh my zsh!
     oh-my-zsh = {

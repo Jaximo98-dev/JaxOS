@@ -4,6 +4,7 @@
   imports =
     [
       ./modules/filesystem.nix
+      ./modules/security.nix
 
       ./modules/wayland.nix
       ./modules/localization.nix

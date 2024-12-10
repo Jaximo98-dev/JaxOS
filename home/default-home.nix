@@ -15,7 +15,7 @@
     ./modules/kitty.nix
 
     ./modules/zsh.nix           # Shell interpreter
-    ./modules/zoxide.nix
+    ./modules/shell_tools.nix
     ./modules/git.nix           # git
     ./modules/btop.nix          # Performance monitor
 
