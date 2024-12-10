@@ -2,7 +2,6 @@
 
 {
   shellAliases = {
-    ll = "ls -l";
     rof = "rofi -show drun; exit";
     cdj = "cd ~/JaxOS";
     cdjmd = if (device == "desktop") then "cd ~/JaxOS; make desktop" else "echo Este es el portátil, zopenco.";
@@ -14,10 +13,13 @@
 
     # --- fzf ---
     f = "fzf";
+    fcd = "cd $(find . -type d | fzf)";
     # Use fzf to search all man pages
     fman = "compgen -c | fzf | xargs man";
 
     # --- eza ---
-    
+    ls = "eza -a --long --sort=name --group-directories-first --icons --header --git-ignore";
+    lr = "eza -a -R --long --sort=name --group-directories-first --icons --header --git-ignore"
+
   };
 }

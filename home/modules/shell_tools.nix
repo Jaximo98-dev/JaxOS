@@ -26,7 +26,6 @@
   };
   home.file."${config.xdg.configHome}/eza/theme.yml" = {
     source = ../../themes/gruvbox_dark_eza.yml;
-    userWritable = true;
   };
 
   # History-aware cd command 
