@@ -37,6 +37,8 @@
       tree
       yazi
       tealdeer
+      cheat
+      figlet
       ncdu
       brightnessctl   # Keyboad backlight for laptop
       pavucontrol

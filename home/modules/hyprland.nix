@@ -4,6 +4,7 @@
   home.packages = with pkgs; [
     swww
     hyprcursor
+    hyprshot
   ];
 
   wayland.windowManager.hyprland = {

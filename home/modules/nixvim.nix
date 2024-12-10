@@ -83,6 +83,7 @@
       clipboard = {
         providers = {
           wl-copy.enable = true; # For Wayland
+          wl-paste.enable = true;
         };
 
         # Sync clipboard between OS and Neovim

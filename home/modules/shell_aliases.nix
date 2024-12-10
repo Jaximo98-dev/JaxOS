@@ -10,6 +10,7 @@
     # --- custom ---
     # Pulls the weather
     weather = "curl https://wttr.in/Malaga";
+    lol1 = "clear && printf '%*s\n' ''$(tput cols)'' | tr ' ' '-' && figlet -f fraktur -c -t Jaximo && printf '\n%*s\n' ''$(tput cols)'' | tr ' ' '-'";
 
     # --- fzf ---
     f = "fzf";
