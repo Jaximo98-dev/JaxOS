@@ -3,6 +3,7 @@
 
   home.packages = with pkgs; [
     swww
+    hyprcursor
   ];
 
   wayland.windowManager.hyprland = {
@@ -121,6 +122,7 @@
       ''
       "waybar"
       "bus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP" # Screenshare
+      ''hyprctl setcursor "Capitaine Cursors (Gruvbox) 10"''
 
       # Apps
       "firefox"
@@ -129,4 +131,19 @@
       ];
     };
   };
+
+  home.pointerCursor = {
+    gtk.enable = true;
+    package = pkgs.capitaine-cursors-themed;
+    name = "Capitaine Cursors (Gruvbox)";
+    size = 10;
+  };
+
+  wayland.windowManager.hyprland.settings = {
+    env = [
+      "HYPRCURSOR_THEME,Capitaine Cursors (Gruvbox)"
+      "HYPRCURSOR_SIZE,10"
+    ];
+  };
+
 }
