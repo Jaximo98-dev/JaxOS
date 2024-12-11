@@ -1,6 +1,6 @@
 .PHONY: all desktop laptop clean
 
-JAXOS_DIR := $(CURDIR)/JaxOS
+JAXOS_DIR := $(realpath $(dir $(lastword $(MAKEFILE_LIST))))
 
 all: desktop
 

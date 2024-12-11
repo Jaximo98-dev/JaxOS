@@ -16,6 +16,7 @@
 
     ./modules/zsh.nix           # Shell interpreter
     ./modules/shell_tools.nix
+    ./modules/cheat.nix
     ./modules/git.nix           # git
     ./modules/btop.nix          # Performance monitor
 
