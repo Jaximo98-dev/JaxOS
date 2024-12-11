@@ -8,5 +8,5 @@
       client.tealdeer = true;
       shell.command = "zsh";
   };
- }
+ };
 }
