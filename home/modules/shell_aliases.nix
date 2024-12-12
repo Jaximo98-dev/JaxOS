@@ -13,7 +13,7 @@
     # Print and clear the terminal with a word on it
     lol1 = "clear && printf '%*s\n' ''$(tput cols)'' | tr ' ' '-' && figlet -f fraktur -c -t Jaximo && printf '\n%*s\n' ''$(tput cols)'' | tr ' ' '-'";
     # custom script, cheathseets
-    cheat= "sh $JAXOS/scripts/cheat.sh";
+    cheats= "sh ~/JaxOS/scripts/cheats.sh";
 
     # --- fzf ---
     f = "fzf";
