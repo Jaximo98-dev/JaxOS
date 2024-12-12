@@ -20,9 +20,6 @@
   # Better cat command
   programs.bat.enable = true;
 
-  # Markdown CLI renderer
-  programs.glow.enable = true;
-
   # Better ls command
   programs.eza = {
     enable = true;

@@ -3,6 +3,8 @@
 {
   imports =
     [
+      ./modules/home_manager_unavailable.nix
+
       ./modules/filesystem.nix
       ./modules/security.nix
 
