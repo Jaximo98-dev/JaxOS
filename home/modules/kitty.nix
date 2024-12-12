@@ -38,6 +38,7 @@
       scrollback_lines = "5000";
       include = "./current-theme.conf";
       update_check_interval = "0";
+      enabled_layouts = "tall,fat,grid";
 
     };
     environment.CURRENT_TERMINAL = "kitty";

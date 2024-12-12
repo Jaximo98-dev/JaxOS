@@ -4,7 +4,7 @@
     enable = true;
     enableZshIntegration = true;
     settings = {
-      cheats.path = [ "$JAXOS/cheatsheets" ];
+      cheats.paths = [ "$JAXOS/cheatsheets" ];
       client.tealdeer = true;
       shell.command = "zsh";
   };

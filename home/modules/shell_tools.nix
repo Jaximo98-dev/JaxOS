@@ -6,7 +6,7 @@
     enable = true;
     colors = {
         fg = "#ebdbb2";
-        bg = "#282828";
+        bg = "-1";
         hl = "#fabd2f";
         info = "#83a598";
         prompt = "#bdae93";
@@ -19,6 +19,9 @@
 
   # Better cat command
   programs.bat.enable = true;
+
+  # Markdown CLI renderer
+  programs.glow.enable = true;
 
   # Better ls command
   programs.eza = {
