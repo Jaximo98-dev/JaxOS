@@ -1,13 +1,14 @@
 #!/bin/bash
 
 CHEATS_DIR=~/JaxOS/cheatsheets
-BAT_CMD="bat --style=numbers --language=markdown --color=always"
+BAT_CMD="bat --style=numbers --color=always"
 
 # Selección con fzf y previsualización reutilizando $BAT_CMD
 SELECTED=$(ls "$CHEATS_DIR" | fzf \
-    --prompt="Cheatsheets: " \
     --height=40% \
     --reverse \
+    --color=bg:-1 \
+    --prompt="Search cheatsheet: " \
     --preview="$BAT_CMD $CHEATS_DIR/{}" \
     --info="inline-right")
 

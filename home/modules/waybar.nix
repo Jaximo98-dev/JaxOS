@@ -66,7 +66,7 @@ in
           "timezone" = "Europe/Madrid";
           "tooltip-format" = "<tt>{calendar}</tt>";
           "calendar" = {
-            "mode" = "year";
+            "mode" = "month";
             "week-pos" = "right";
             "format" = {
                 "months" =     "<span color='#ffead3'><b>{}</b></span>";

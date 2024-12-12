@@ -10,7 +10,10 @@
     # --- custom ---
     # Pulls the weather
     weather = "curl https://wttr.in/Malaga";
+    # Print and clear the terminal with a word on it
     lol1 = "clear && printf '%*s\n' ''$(tput cols)'' | tr ' ' '-' && figlet -f fraktur -c -t Jaximo && printf '\n%*s\n' ''$(tput cols)'' | tr ' ' '-'";
+    # custom script, cheathseets
+    cheat= "sh $JAXOS/scripts/cheat.sh";
 
     # --- fzf ---
     f = "fzf";
