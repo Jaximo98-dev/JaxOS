@@ -16,7 +16,6 @@
 
     ./modules/zsh.nix           # Shell interpreter
     ./modules/shell_tools.nix
-    ./modules/navi.nix
     ./modules/git.nix           # git
     ./modules/btop.nix          # Performance monitor
 
@@ -38,7 +37,6 @@
       tree
       yazi
       tealdeer
-      cheat
       figlet
       ncdu
       brightnessctl   # Keyboad backlight for laptop
