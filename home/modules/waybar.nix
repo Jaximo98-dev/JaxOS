@@ -8,7 +8,7 @@ in
       mainBar = {
         layer = "top";
         position = "top";
-        height = 25;
+        height = 33;
 
         modules-left = ["hyprland/workspaces"];
         modules-center = ["clock"];
@@ -88,7 +88,7 @@ in
     style = with colors.gruvbox; ''
     * {
         font-family: JetBrainsMono Nerd Font;
-        font-size: 12px;
+        font-size: 14px;
         border: none;
         border-radius: 0;
         box-shadow: none;

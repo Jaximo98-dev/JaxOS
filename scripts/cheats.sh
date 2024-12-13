@@ -5,7 +5,7 @@ BAT_CMD="bat --style=numbers --color=always"
 
 # Selección con fzf y previsualización reutilizando $BAT_CMD
 SELECTED=$(ls "$CHEATS_DIR" | fzf \
-    --height=40% \
+    --height=60% \
     --reverse \
     --color=bg:-1 \
     --prompt="Search cheatsheet: " \

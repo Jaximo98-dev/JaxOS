@@ -39,6 +39,7 @@
       include = "./current-theme.conf";
       update_check_interval = "0";
       enabled_layouts = "tall,fat,grid";
+      resize_in_steps = true;
 
     };
     environment.CURRENT_TERMINAL = "kitty";
