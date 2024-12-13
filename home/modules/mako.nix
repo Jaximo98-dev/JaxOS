@@ -1,7 +1,7 @@
 { config, pkgs, ...}:
 
 {
-  programs.mako = {
+  services.mako = {
     enable = true;
 
     font = "JetBrainsMono Nerd Font 10";
