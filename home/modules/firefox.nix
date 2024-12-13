@@ -54,6 +54,7 @@
         "signon.rememberSignons" = false;
         "identity.fxaccounts.enabled" = false;
 
+
         # --- PeskyFox ---
         #UI
         "browser.privatebrowsing.vpnpromourl" = "";

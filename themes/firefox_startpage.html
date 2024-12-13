@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Tab</title>
+    <style>
+        /* Base styling */
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Jetbrains Mono', monospace;
+            background-color: #3C3836;
+            color: #EBDBB2;
+        }
+
+        h1 {
+            font-size: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        /* Categories styling */
+        .categories {
+            display: flex;
+            gap: 2rem;
+        }
+
+        .category {
+            text-align: center;
+            background-color: #504945;
+            border: 1px solid #ebdbb27d;
+            border-radius: 2px;
+            padding: 1rem;
+            width: 300px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+            transition: transform 0.1s ease, box-shadow 0.3s ease;
+        }
+
+        .category:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .category h2 {
+            font-size: 1rem;
+            font-style: italic;
+            margin-bottom: 1rem;
+            color: #ebdbb27d;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Link styling */
+        .category a {
+            display: block;
+            font-size: 1rem;
+            text-decoration: none;
+            color: #B8BB26;
+            margin: 0.3rem 0;
+            transition: color 0.3s ease;
+        }
+
+        .category a:hover {
+            color: #FABD2F;
+        }
+
+        /* Footer */
+        footer {
+            position: absolute;
+            bottom: 1rem;
+            font-size: 0.9rem;
+            color: #928374;
+        }
+
+        footer a {
+            color: inherit; 
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Welcome, Jaximo</h1>
+        <div class="categories">
+            <div class="category">
+                <h2>Search</h2>
+                <a href="https://www.google.com" target="_blank">Google</a>
+                <a href="https://www.duckduckgo.com" target="_blank">DuckDuckGo</a>
+            </div>
+            <div class="category">
+                <h2>Development</h2>
+                <a href="https://www.github.com" target="_blank">GitHub</a>
+                <a href="https://stackoverflow.com" target="_blank">Stack Overflow</a>
+            </div>
+            <div class="category">
+                <h2>Community</h2>
+                <a href="https://www.reddit.com" target="_blank">Reddit</a>
+                <a href="https://www.discord.com" target="_blank">Discord</a>
+            </div>
+            <div class="category">
+                <h2>Linux</h2>
+                <a href="https://www.nixos.org" target="_blank">NixOS</a>
+                <a href="https://archlinux.org" target="_blank">Arch Linux</a>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <a href="https://example.com">Always remember: Work on being proud.</a>
+    </footer>
+</body>
+</html>
