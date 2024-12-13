@@ -1,4 +1,4 @@
-URL> Atajos de Kitty
+> Atajos de Kitty
 
 MOD: `CTRL + SHIFT`
 

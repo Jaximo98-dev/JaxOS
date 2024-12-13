@@ -49,6 +49,8 @@
       indent-blankline.enable = true;
 
       harpoon.enable = true;
+
+      vim-be-good.enable = true;
     };
 
     globals = {
