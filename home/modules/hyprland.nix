@@ -13,8 +13,8 @@
 
 
     extraConfig = ''
-    bindm = $mainMod, mouse:272, movewindow
-    bindm = $mainMod, mouse:273, resizewindow
+    bindm = SUPER, mouse:272, movewindow
+    bindm = SUPER, mouse:273, resizewindow
     '';
 
     settings = {
@@ -98,6 +98,7 @@
         "$mod, l, movefocus, r"
         "$mod, k, movefocus, u"
         "$mod, j, movefocus, d"
+
 
         # Workspaces
         "$mod, 1, workspace, 1"

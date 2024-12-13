@@ -28,11 +28,23 @@
     source = ../../themes/gruvbox_dark_eza.yml;
   };
 
+  # Git in CLI
+  programs.lazygit.enable = true;
+
   # History-aware cd command 
   programs.zoxide = {
     enable = true;
     enableZshIntegration = true;
     options = [];
+  };
+
+  # System monitor
+  programs.btop = {
+    enable = true;
+    settings = {
+      color_theme = "gruvbox_dark";
+      theme_background = false;
+    };
   };
 
 }

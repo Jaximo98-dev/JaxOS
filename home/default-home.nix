@@ -18,7 +18,6 @@
     ./modules/zsh.nix           # Shell interpreter
     ./modules/shell_tools.nix
     ./modules/git.nix           # git
-    ./modules/btop.nix          # Performance monitor
 
     ./modules/rofi.nix
     ./modules/firefox.nix       # firefoxt
