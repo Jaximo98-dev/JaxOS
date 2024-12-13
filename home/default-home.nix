@@ -13,6 +13,7 @@
     ./modules/hyprland.nix
     ./modules/waybar.nix
     ./modules/kitty.nix
+    ./modules/mako.nix
 
     ./modules/zsh.nix           # Shell interpreter
     ./modules/shell_tools.nix

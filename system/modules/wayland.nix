@@ -15,7 +15,6 @@
 
 
     # Nice stuff
-    mako # Notifications
     libnotify # mako dependency
 
     waybar
@@ -65,6 +64,6 @@
 
   # Permisos
   xdg.portal.enable = true;
-  xdg.portal.extraPortals = [ pkgs.xdg-desktop-portal-gnome ];
+  xdg.portal.extraPortals = [ pkgs.xdg-desktop-portal-gnome pkgs.xdg-desktop-portal-gtk ];
   xdg.portal.config.common.default = "*";
 }

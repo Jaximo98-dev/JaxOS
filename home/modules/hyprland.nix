@@ -11,6 +11,12 @@
     enable = true;
     xwayland.enable = true;
 
+
+    extraConfig = ''
+    bindm = $mainMod, mouse:272, movewindow
+    bindm = $mainMod, mouse:273, resizewindow
+    '';
+
     settings = {
 
       #monitor = name, resolution, position, scale
@@ -46,9 +52,6 @@
       };
 
       
-      # Looks
-
-
       decoration = {
         rounding = 0;
       };
@@ -65,8 +68,6 @@
         ];
       };
 
-      # Function
-
       input = {
         kb_layout = "es";
       };
@@ -80,16 +81,25 @@
       ];
 
       bind = [
+
+        # Actions
+        "$mod, W, killactive"
+        "$mod, M, exit"
+
+        # Launchers
         "$mod, RETURN, exec, kitty"
         "$mod, F, exec, firefox"
         "$mod, D, exec, vesktop"
         "$mod, C, exec, codium"
         "$mod, R, exec, rofi -show drun"
 
-        "$mod, W, killactive"
+        # Windows, note: two were placed outside in extraConfig
+        "$mod, h, movefocus, l"
+        "$mod, l, movefocus, r"
+        "$mod, k, movefocus, u"
+        "$mod, j, movefocus, d"
 
-        "$mod, M, exit"
-
+        # Workspaces
         "$mod, 1, workspace, 1"
         "$mod, 2, workspace, 2"
         "$mod, 3, workspace, 3"
@@ -112,7 +122,7 @@
         "$mod SHIFT, 9, movetoworkspace, 9"
         "$mod SHIFT, 0, movetoworkspace, 10"
 
-
+        # Additional navigation
         "$mod, V, togglefloating,"
         "$mod, SPACE, fullscreen"
       ];
