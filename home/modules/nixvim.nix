@@ -50,7 +50,10 @@
 
       harpoon.enable = true;
 
+      # Vim training
       vim-be-good.enable = true;
+      hardtime.enable = true;
+      precognition.enable = true;
     };
 
     globals = {
