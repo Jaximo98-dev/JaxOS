@@ -23,6 +23,7 @@ Cambiar focus en dirección: `MOD + [h,j,k,l]`
 # Navegacion entre windows dentro de un workspace
 
 Hacer flotante: `MOD + V`
+Hacer fija (flotante): `MOD + P`
 Hacer fullscreen: `MOD + Space`
 
 Resize una window: `MOD + RMB(Dragguing)`

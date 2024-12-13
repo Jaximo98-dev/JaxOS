@@ -126,6 +126,7 @@
         # Additional navigation
         "$mod, V, togglefloating,"
         "$mod, SPACE, fullscreen"
+        "$mod, P, pin"
       ];
 
       exec-once = [
